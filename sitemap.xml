@@ -4,7 +4,7 @@
   <url>
     <loc>https://hello-nilera.com/2024/03/20/PyTorch%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/</loc>
     
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-03-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +22,7 @@
 
   <url>
     <loc>https://hello-nilera.com/</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -30,21 +30,21 @@
   
   <url>
     <loc>https://hello-nilera.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hello-nilera.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hello-nilera.com/tags/PyTorch/</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -53,14 +53,14 @@
   
   <url>
     <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/PyTorch/</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
