@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hello-nilera.com/2024/05/04/Hadoop2HBase/</loc>
-    <lastmod>2024-05-04</lastmod>
+    <loc>https://hello-nilera.com/2024/05/05/Hash/</loc>
+    <lastmod>2024-05-05</lastmod>
   </url>
   <url>
     <loc>https://hello-nilera.com/2024/03/20/PyTorch%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/</loc>
-    <lastmod>2024-04-23</lastmod>
+    <lastmod>2024-05-05</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/05/04/Stack/</loc>
+    <lastmod>2024-05-05</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/05/04/ReviewAlgorithm/</loc>
+    <lastmod>2024-05-05</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/04/12/20240412-%E4%B8%8B%E4%B8%80%E6%AD%A5%E8%AE%A1%E5%88%92/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/05/04/Hadoop2HBase/</loc>
+    <lastmod>2024-05-04</lastmod>
   </url>
   <url>
     <loc>https://hello-nilera.com/2024/04/23/CentOS7%E6%9B%B4%E6%8D%A2%E9%98%BF%E9%87%8C-%E6%B8%85%E5%8D%8E%E6%BA%90/</loc>
@@ -15,10 +31,6 @@
   <url>
     <loc>https://hello-nilera.com/2024/04/12/Axure-RP-9-%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2024-04-23</lastmod>
-  </url>
-  <url>
-    <loc>https://hello-nilera.com/2024/04/12/20240412-%E4%B8%8B%E4%B8%80%E6%AD%A5%E8%AE%A1%E5%88%92/</loc>
-    <lastmod>2024-04-19</lastmod>
   </url>
   <url>
     <loc>https://hello-nilera.com/2024/03/26/Git%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</loc>
