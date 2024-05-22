@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hello-nilera.com/2024/05/22/Build-Tomcat/</loc>
+    
+    <lastmod>2024-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hello-nilera.com/2024/05/19/BELKA-2024/</loc>
     
     <lastmod>2024-05-22</lastmod>
@@ -262,6 +271,20 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://hello-nilera.com/tags/ECharts/</loc>
+    <lastmod>2024-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/Tomcat/</loc>
+    <lastmod>2024-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -378,6 +401,13 @@
   
   <url>
     <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Kaggle/</loc>
+    <lastmod>2024-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/ECharts/</loc>
     <lastmod>2024-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
