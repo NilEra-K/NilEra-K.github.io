@@ -35,66 +35,93 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/StarLogo.svg" alt="Hello, NilEra :-)" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">目录</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="/me">我</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/NilEra-K"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">CppDev</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-05-22T13:50:18.000Z" title="2024/5/22 21:50:18">2024-05-22</time>发表</span><span class="level-item"><time dateTime="2024-06-01T11:58:42.746Z" title="2024/6/1 19:58:42">2024-06-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/CppDev/">CppDev</a><span> / </span><a class="link-muted" href="/categories/CppDev/QT6/">QT6</a></span><span class="level-item">8 分钟读完 (大约1206个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/05/22/Better-QT/">Better QT</a></p><div class="content"><p>[TOC]</p>
+  </script><!-- hexo injector head_end end --></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/StarLogo.svg" alt="Hello, NilEra :-)" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">目录</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="/me">我</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/NilEra-K"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">CppDev</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-05-22T13:50:18.000Z" title="2024/5/22 21:50:18">2024-05-22</time>发表</span><span class="level-item"><time dateTime="2024-06-02T11:46:21.333Z" title="2024/6/2 19:46:21">2024-06-02</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/CppDev/">CppDev</a><span> / </span><a class="link-muted" href="/categories/CppDev/QT6/">QT6</a></span><span class="level-item">14 分钟读完 (大约2119个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/05/22/Better-QT/">Better QT</a></p><div class="content"><p>[TOC]</p>
 <h2 id="Qt-的一些常用技巧"><a href="#Qt-的一些常用技巧" class="headerlink" title="Qt 的一些常用技巧"></a>Qt 的一些常用技巧</h2><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><ul>
 <li>快捷键 <code>Ctrl + Tab</code> 可以切换文件；</li>
-<li>快捷键 <code>Alt + ENTER</code> 可以快速提示错误修改方案，类似于 IDEA 的 <code>Alt + ENTER</code>；</li>
+<li>快捷键 <code>Alt + ENTER</code> 弹出代码生成提示，可以快速提示错误修改方案，类似于 IDEA 的 <code>Alt + ENTER</code>；</li>
+<li>快捷键 <code>Alt + 鼠标</code> 同时输入；</li>
 <li>快捷键 <code>Ctrl + R</code> 运行程序；</li>
 <li>快捷键 <code>Ctrl + M</code> 创建书签（Bookmark），或者直接在某行代码前右键添加书签；</li>
-<li>用键盘模拟鼠标操作<table>
-  <tr>
-      <td colspan="3">功能键</td> 
-      <td colspan="3">方向键</td> 
-      <td>备注</td>
-  </tr>
-  <tr>
-        <td>Ctrl</td>
-        <td>Shift</td>
-        <td>Alt</td>
-        <td>左/右</td>
-        <td>上/下</td>
-        <td>Home/End</td>
-        <td>方向键具有移动光标的作用</td>
-  </tr>
-  <tr>
-        <td>×</td>
-        <td>×</td>
-        <td>×</td>
-        <td>字符</td>
-        <td>字符</td>
-        <td>行首/行尾</td>
-        <td>-</td>
-  </tr>
-  <tr>
-        <td>√</td>
-        <td>×</td>
-        <td>×</td>
-        <td>单词</td>
-        <td>滚动条</td>
-        <td>文件头/尾</td>
-        <td>-</td>
-  </tr>
-  <tr>
-        <td>√</td>
-        <td>√</td>
-        <td>×</td>
-        <td>单词</td>
-        <td>移动</td>
-        <td>行首/行尾</td>
-        <td>Shift具有选中文本的作用</td>
-  </tr>
-  <tr>
-        <td>√</td>
-        <td>×</td>
-        <td>√</td>
-        <td>-</td>
-        <td>向上/下复制选中部分</td>
-        <td>-</td>
-        <td>-</td></li>
+<li>快捷键 <code>Ctrl + ENTER</code> 在当前行下方插入空行；</li>
+<li>快捷键 <code>Ctrl + Shift + ENTER</code> 在当前行下方插入空行；</li>
+<li>快捷键 <code>Ctrl + I</code> 代码对齐；</li>
+<li>快捷键 <code>Ctrl + ;</code> 格式化代码；</li>
+<li>快捷键 <code>Shift + Delete</code> 剪切当前行，可以当删除用；</li>
+<li>快捷键 <code>Ctrl + Shift + R</code> 局部变量统一修改；</li>
+<li>快捷键 <code>Ctrl + Shift + V</code> 复制历史；</li>
+<li>用键盘模拟鼠标操作：  <table>
+    <tr>
+        <td colspan="3">功能键</td> 
+        <td colspan="3">方向键</td> 
+        <td>备注</td>
+    </tr>
+    <tr>
+          <td>Ctrl</td>
+          <td>Shift</td>
+          <td>Alt</td>
+          <td>左/右</td>
+          <td>上/下</td>
+          <td>Home/End</td>
+          <td>方向键具有移动光标的作用</td>
+    </tr>
+    <tr>
+          <td>×</td>
+          <td>×</td>
+          <td>×</td>
+          <td>字符</td>
+          <td>字符</td>
+          <td>行首/行尾</td>
+          <td>-</td>
+    </tr>
+    <tr>
+          <td>√</td>
+          <td>×</td>
+          <td>×</td>
+          <td>单词</td>
+          <td>滚动条</td>
+          <td>文件头/尾</td>
+          <td>-</td>
+    </tr>
+    <tr>
+          <td>√</td>
+          <td>√</td>
+          <td>×</td>
+          <td>单词</td>
+          <td>移动</td>
+          <td>行首/行尾</td>
+          <td>Shift具有选中文本的作用</td>
+    </tr>
+    <tr>
+          <td>√</td>
+          <td>×</td>
+          <td>√</td>
+          <td>-</td>
+          <td>向上/下复制选中部分</td>
+          <td>-</td>
+          <td>-</td>
+    </tr>
+  </table></li>
+<li>快捷键 <code>F1</code> 查看帮助、文档</li>
+<li>快捷键 <code>F2</code> 快速到变量或者函数间切换</li>
+<li>快捷键 <code>F4</code> 快速在<code>.cpp</code>文件和<code>.h</code>文件间切换</li>
+<li>快捷键 <code>Ctrl + Shift + U</code> 查找所有使用该符号的地方</li>
+<li>快捷键 <code>Ctrl + K</code> 打开定位器</li>
+<li>快捷键 <code>Ctrl + L</code> 跳转到某一行</li>
+<li>快捷键 <code>Ctrl + [Shift] + F</code> 查找&#x2F;替换当前文件[项目]当前选中的内容</li>
+<li>快捷键 <code>[Shift] + F3</code> 查找下[上]一个</li>
+<li>快捷键 <code>Ctrl + B</code> 编译工程</li>
+<li>快捷键 <code>Ctrl + R</code> 运行工程</li>
+<li>快捷键 <code>F5</code> 调试运行</li>
+<li>快捷键 <code>Ctrl + Shift + F5</code> 重启调试</li>
+<li>快捷键 <code>F9</code> 设置和取消断点</li>
+<li>快捷键 <code>F10</code> 单步跳过</li>
+<li>快捷键 <code>F11</code> 单步进入</li>
 </ul>
-</table>
-
-
+<h3 id="Creator-片段"><a href="#Creator-片段" class="headerlink" title="Creator 片段"></a>Creator 片段</h3><p>片段简单理解一下就是已经写好的一些模式化的代码，用户可以使用内置片段或者根据自己的需要自定义片段。</p>
+<ol>
+<li>自带片段示例<br><img src="/./BetterQT/QtQuickSnippets.png" alt="Qt Quick Part"></li>
+<li>自定义片段<br>一个用户的自定义片段需要以下几个内容：<br>$$片段 &#x3D; 一级标题 + 二级标题 + 片段文本$$<br>需要通过：编辑（Edit）→首选项（Preferences）→文本编辑器（Text Editor）→片段（Snippets）进行设置<br><img src="/./BetterQT/Qt_Custom_Snippets.png" alt="Qt Custom Snippets"><br>比如我要添加一个自定义片段 <code>note</code>，用来表示文件注释，可以选择 <code>Group</code> 为 <code>C++</code>，然后选择 <code>Add</code>，添加指定的内容：<br><img src="/./BetterQT/AddCustomSnippets.png" alt="Add Custom Snippets"></li>
+</ol>
 <h2 id="Qt-代码-文件解释"><a href="#Qt-代码-文件解释" class="headerlink" title="Qt 代码&#x2F;文件解释"></a>Qt 代码&#x2F;文件解释</h2><p>Qt的源代码和文件解释</p>
 <h3 id="Qt-代码"><a href="#Qt-代码" class="headerlink" title="Qt 代码"></a>Qt 代码</h3><ul>
 <li><code>hellocosbrowser.h</code>  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> HELLOCOSBROWSER_H</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> HELLOCOSBROWSER_H</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QWidget&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QMessageBox&gt;</span></span></span><br><span class="line"></span><br><span class="line">QT_BEGIN_NAMESPACE</span><br><span class="line"><span class="keyword">namespace</span> Ui &#123; <span class="keyword">class</span> <span class="title class_">HelloCOSBrowser</span>; &#125;</span><br><span class="line">QT_END_NAMESPACE</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">HelloCOSBrowser</span> : <span class="keyword">public</span> QWidget  <span class="comment">// QWidget 是所有应用程序窗口的基类</span></span><br><span class="line">&#123;</span><br><span class="line">    Q_OBJECT    <span class="comment">// Qt的宏, 支持 Qt 的特性, 如信号与槽、对象树、元对象等</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">// 这里 HelloCOSBrowser 指定父窗口指针为 nullptr, 则它会作为一个独立的窗口进行展示, 否则则会作为父窗口的一个控件</span></span><br><span class="line">    <span class="comment">// 关于这个父窗口指针, 一个很典型的应用就是 微信</span></span><br><span class="line">    <span class="comment">// 当我们创建新窗口的时候, 如果不指定父窗口, 就会弹出一个独立的新窗口, 即电脑任务栏的图标会多出来一个</span></span><br><span class="line">    <span class="comment">// 如果指定了父窗口, 则不会创建一个独立的窗口, 即电脑任务栏处的图标不会增加</span></span><br><span class="line">    <span class="built_in">HelloCOSBrowser</span>(QWidget *parent = <span class="literal">nullptr</span>);</span><br><span class="line">    ~<span class="built_in">HelloCOSBrowser</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> slots:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">showDialog</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    Ui::HelloCOSBrowser *ui;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">// HELLOCOSBROWSER_H</span></span></span><br></pre></td></tr></table></figure></li>
@@ -137,7 +164,99 @@
 <li>生成拓展 C++ 代码，再进行预编译</li>
 <li>程序员在使用时，需要继承 QObject 类或者是 QObject 子类，并且包含 <code>Q_OBJECT</code> 宏。</li>
 </ol>
-<h2 id="Qt应用程序开发"><a href="#Qt应用程序开发" class="headerlink" title="Qt应用程序开发"></a>Qt应用程序开发</h2><h3 id="为窗口添加图标"><a href="#为窗口添加图标" class="headerlink" title="为窗口添加图标"></a>为窗口添加图标</h3><ol>
+<h2 id="Qt应用程序开发"><a href="#Qt应用程序开发" class="headerlink" title="Qt应用程序开发"></a>Qt应用程序开发</h2><h3 id="Qt-Designer-设计师界面使用"><a href="#Qt-Designer-设计师界面使用" class="headerlink" title="Qt Designer 设计师界面使用"></a>Qt Designer 设计师界面使用</h3><p><img src="/./BetterQT/Qt_Designer.png" alt="Qt Designer"><br>① Qt 控件编辑模式<br>② Qt 信号与槽编辑模式<br>③ Qt 伙伴关系编辑模式<br>④ Qt Tab 顺序编辑模式：可以设置按下 Tab 键的高亮顺序</p>
+<h3 id="Qt-核心——信号与槽"><a href="#Qt-核心——信号与槽" class="headerlink" title="Qt 核心——信号与槽"></a>Qt 核心——信号与槽</h3><p><strong>信号与槽的基本概念</strong><br><img src="/./BetterQT/QtSignalsSlots.drawio.png" alt="Qt Signals and Slots"></p>
+<ul>
+<li>Qt 中的信号和槽是支持多对多的，即一个信号可以对应多个槽，一个槽可以由多个信号触发。</li>
+<li>Qt 中的信号无需实现，可以由函数（普通函数或者槽函数）通过 <code>emit</code> 关键字发送信号传递参数。</li>
+</ul>
+<p><strong>Qt中如何定义信号：</strong></p>
+<ol>
+<li>继承 <code>QObject</code> 类或其派生类，同时包含 <code>Q_OBJECT</code> 宏</li>
+<li>使用关键字 <code>signals</code> 声明函数信号函数，不需要具体实现信号函数</li>
+<li>使用 <code>emit</code> 关键字发送信号</li>
+</ol>
+<p><strong>Qt中如何定义槽函数：</strong></p>
+<ol>
+<li>必须包含 <code>Q_OBJECT</code> 宏</li>
+<li>使用关键字 <code>[public/protected/private] slots</code> 声明函数</li>
+<li>需要具体实现声明的槽函数</li>
+</ol>
+<p><strong>Qt中如何连接信号与槽（三种写法）：</strong></p>
+<ol>
+<li><code>SIGNAL/SLOT</code> 宏写法：<br><code>QObject::connect(this, SIGNAL(...), this, SLOT(...));</code></li>
+<li>函数指针写法：<br><code>QObject::connect(this, &amp;SignalFunction, this, &amp;SlotFunction)</code></li>
+<li>lambda 表达式写法：<br><code>QObject::connect(this, &amp;SignalFunction, this, [=]() &#123; qDebug() &lt;&lt; &quot;...&quot;; &#125;)</code></li>
+</ol>
+<p>三种写法的比较：</p>
+<table>
+    <tr>
+        <td rowspan="2" colspan="3">连接信号与槽</td> 
+        <td colspan="2">宏</td>
+        <td colspan="2">函数指针</td>
+    </tr>
+    <tr>
+        <td>编译</td>
+        <td>运行</td>
+        <td>编译</td>
+        <td>运行</td>
+    </tr>
+    <tr>
+        <td rowspan="4">参数类型</td>
+        <td colspan="2">完全相同</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+    </tr>
+    <tr>
+        <td rowspan="2">隐式转换</td>
+        <td>向上</td>
+        <td>√</td>
+        <td>×</td>
+        <td>√</td>
+        <td>√</td>
+    </tr>
+    <tr>
+        <td>向下</td>
+        <td>√</td>
+        <td>×</td>
+        <td>√</td>
+        <td>√</td>
+    </tr>
+    <tr>
+        <td colspan="2">不可以隐式转换</td>
+        <td>√</td>
+        <td>×</td>
+        <td>×</td>
+        <td>×</td>
+    </tr>
+        <tr>
+        <td rowspan="3">参数个数</td>
+        <td colspan="2">信号=槽</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+    </tr>
+    <tr>
+        <td colspan="2">信号>槽</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+    </tr>
+    <tr>
+        <td colspan="2">信号<槽</td>
+        <td>√</td>
+        <td>×</td>
+        <td>×</td>
+        <td>×</td>
+    </tr>
+</table>
+
+
+<h3 id="为窗口添加图标"><a href="#为窗口添加图标" class="headerlink" title="为窗口添加图标"></a>为窗口添加图标</h3><ol>
 <li>准备图标文件</li>
 <li>调用 setWindowIcon 方法</li>
 </ol>
