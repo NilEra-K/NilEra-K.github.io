@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hello-nilera.com/2024/03/26/Git%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</loc>
+    <lastmod>2024-06-03</lastmod>
+  </url>
+  <url>
     <loc>https://hello-nilera.com/2024/05/22/Better-QT/</loc>
+    <lastmod>2024-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/06/02/QuickPassHBase/</loc>
     <lastmod>2024-06-02</lastmod>
   </url>
   <url>
@@ -55,10 +63,6 @@
   <url>
     <loc>https://hello-nilera.com/2024/04/12/Axure-RP-9-%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2024-04-23</lastmod>
-  </url>
-  <url>
-    <loc>https://hello-nilera.com/2024/03/26/Git%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</loc>
-    <lastmod>2024-03-31</lastmod>
   </url>
   <url>
     <loc>https://hello-nilera.com/2024/03/27/VSCode-C-%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</loc>
