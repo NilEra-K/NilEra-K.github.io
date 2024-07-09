@@ -35,7 +35,356 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/StarLogo.svg" alt="Hello, NilEra :-)" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">目录</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="/me">我</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/NilEra-K"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">HBase</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-06-22T07:55:58.000Z" title="2024/6/22 15:55:58">2024-06-22</time>发表</span><span class="level-item"><time dateTime="2024-06-22T08:04:57.861Z" title="2024/6/22 16:04:57">2024-06-22</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/">大数据技术</a><span> / </span><a class="link-muted" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/HBase/">HBase</a></span><span class="level-item">几秒读完 (大约8个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/06/22/HBaseExamReview/">HBaseExamReview</a></p><div class="content"><h2 id="HBase-考察知识点复习"><a href="#HBase-考察知识点复习" class="headerlink" title="HBase 考察知识点复习"></a>HBase 考察知识点复习</h2></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-06-02T14:43:53.000Z" title="2024/6/2 22:43:53">2024-06-02</time>发表</span><span class="level-item"><time dateTime="2024-06-22T07:32:50.275Z" title="2024/6/22 15:32:50">2024-06-22</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/">大数据技术</a><span> / </span><a class="link-muted" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/HBase/">HBase</a></span><span class="level-item">1 小时读完 (大约6723个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/06/02/QuickPassHBase/">QuickPassHBase</a></p><div class="content"><h2 id="快速上手HBase"><a href="#快速上手HBase" class="headerlink" title="快速上手HBase"></a>快速上手HBase</h2><p>[TOC]</p>
+  </script><!-- hexo injector head_end end --></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/StarLogo.svg" alt="Hello, NilEra :-)" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">目录</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="/me">我</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/NilEra-K"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">HBase</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-06-22T07:55:58.000Z" title="2024/6/22 15:55:58">2024-06-22</time>发表</span><span class="level-item"><time dateTime="2024-07-08T01:54:01.794Z" title="2024/7/8 09:54:01">2024-07-08</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/">大数据技术</a><span> / </span><a class="link-muted" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/HBase/">HBase</a></span><span class="level-item">44 分钟读完 (大约6534个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/06/22/HBaseExamReview/">HBaseExamReview</a></p><div class="content"><h2 id="HBase-考察知识点复习"><a href="#HBase-考察知识点复习" class="headerlink" title="HBase 考察知识点复习"></a>HBase 考察知识点复习</h2><h3 id="知识点（选择）"><a href="#知识点（选择）" class="headerlink" title="知识点（选择）"></a>知识点（选择）</h3><ol>
+<li><p>Region的分裂</p>
+<p>在<strong>HBase</strong>中，<code>Region</code> 是数据管理的基本单位，类似于关系型数据库中的分区。它是 <strong>HBase</strong> 数据存储和组织的核心概念之一。<br><code>Region</code> 的概念和特点：<br><code>Region</code> 是 <code>HBase</code> 数据管理的基本单位，它负责存储一定范围内的数据。每个 <code>Region</code> 由一个起始 <code>RowKey</code> 和 终止 <code>RowKey</code> 定义，负责存储该范围内的数据。与关系型数据库中的分区类似，<code>HBase</code> 中的 <code>Region</code> 可以根据数据量的大小进行动态调整。当一个<code>Region</code> 的数据量过大时，它会被 <strong>分裂</strong> 成两个新的 <code>Region</code>。相反，当数据量较小时，两个或多个 <code>Region</code> 可能会合并成一个新的<code>Region</code>。</p>
+<p>当 <code>MemStore</code> 的数据超过阈值时，将数据溢写磁盘，生成一个 <code>StoreFile</code> 文件。当 <code>Region</code> 中最大<code>Store</code> 的大小超过阈值时，<code>Region</code> 分裂，等分成两个 <code>Region</code>，实现数据访问的负载均衡。新的 <code>Region</code> 的位置由 <code>HMaster</code> 来确定在哪个<code>RegionServer</code> 中。</p>
+</li>
+<li><p>查看表结构的命令</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">[subowen@bigdata ~]$ hbase shell</span><br><span class="line">2024-07-05 23:04:35,655 WARN  [main] util.NativeCodeLoader: Unable to load native-hadoop library <span class="keyword">for</span> your platform... using builtin-java classes <span class="built_in">where</span> applicable</span><br><span class="line">HBase Shell</span><br><span class="line">Use <span class="string">&quot;help&quot;</span> to get list of supported commands.</span><br><span class="line">Use <span class="string">&quot;exit&quot;</span> to quit this interactive shell.</span><br><span class="line">For Reference, please visit: http://hbase.apache.org/2.0/book.html<span class="comment">#shell</span></span><br><span class="line">Version 2.1.8, rd8333e556c8ed739cf39dab58ddc6b43a50c0965, Tue Nov 19 15:29:04 UTC 2019</span><br><span class="line">Took 0.0028 seconds</span><br><span class="line">hbase(main):001:0&gt; list</span><br><span class="line">TABLE</span><br><span class="line">logs</span><br><span class="line">logs_20240606</span><br><span class="line">logs_20240607</span><br><span class="line">user</span><br><span class="line">sdutcm:bigdata</span><br><span class="line">5 row(s)</span><br><span class="line">Took 1.2756 seconds</span><br><span class="line">=&gt; [<span class="string">&quot;logs&quot;</span>, <span class="string">&quot;logs_20240606&quot;</span>, <span class="string">&quot;logs_20240607&quot;</span>, <span class="string">&quot;user&quot;</span>, <span class="string">&quot;sdutcm:bigdata&quot;</span>]</span><br><span class="line"></span><br><span class="line">hbase(main):002:0&gt; describe <span class="string">&#x27;sdutcm:bigdata&#x27;</span></span><br><span class="line">Table sdutcm:bigdata is ENABLED</span><br><span class="line">sdutcm:bigdata</span><br><span class="line">COLUMN FAMILIES DESCRIPTION</span><br><span class="line">&#123;NAME =&gt; <span class="string">&#x27;info&#x27;</span>, VERSIONS =&gt; <span class="string">&#x27;5&#x27;</span>, EVICT_BLOCKS_ON_CLOSE =&gt; <span class="string">&#x27;false&#x27;</span>, NEW_VERSION_BEHAVIOR =&gt; <span class="string">&#x27;false&#x27;</span>, KEEP_DELETED_CELLS =&gt; <span class="string">&#x27;FALSE&#x27;</span>, CACHE_DATA_ON_WRITE =&gt; <span class="string">&#x27;false&#x27;</span>, DATA_BLOCK_ENCODING =&gt; <span class="string">&#x27;NONE&#x27;</span>, TTL =&gt; <span class="string">&#x27;FOREVER&#x27;</span>, MIN_VERSIONS =&gt; <span class="string">&#x27;0&#x27;</span>, REPLICATION_SCOPE =&gt; <span class="string">&#x27;0&#x27;</span>, BLOOMFILTER =&gt; <span class="string">&#x27;ROW&#x27;</span>, CACHE_INDEX_ON_WRITE =&gt; <span class="string">&#x27;false&#x27;</span>, IN_MEMORY =&gt; <span class="string">&#x27;false&#x27;</span>, CACHE_BLOOMS_ON_WRITE =&gt; <span class="string">&#x27;false&#x27;</span>, PREFETCH_BLOCKS_ON_OPEN =&gt; <span class="string">&#x27;false&#x27;</span>, COMPRESSION =&gt; <span class="string">&#x27;NONE&#x27;</span>, BLOCKCACHE =&gt; <span class="string">&#x27;true&#x27;</span>, BLOCKSIZE =&gt; <span class="string">&#x27;65536&#x27;</span>&#125;</span><br><span class="line">&#123;NAME =&gt; <span class="string">&#x27;msg&#x27;</span>, VERSIONS =&gt; <span class="string">&#x27;5&#x27;</span>, EVICT_BLOCKS_ON_CLOSE =&gt; <span class="string">&#x27;false&#x27;</span>, NEW_VERSION_BEHAVIOR =&gt; <span class="string">&#x27;false&#x27;</span>, KEEP_DELETED_CELLS =&gt; <span class="string">&#x27;FALSE&#x27;</span>, CACHE_DATA_ON_WRITE =&gt; <span class="string">&#x27;false&#x27;</span>, DATA_BLOCK_ENCODING =&gt; <span class="string">&#x27;NONE&#x27;</span>, TTL =&gt; <span class="string">&#x27;FOREVER&#x27;</span>, MIN_VERSIONS =&gt; <span class="string">&#x27;0&#x27;</span>, REPLICATION_SCOPE =&gt; <span class="string">&#x27;0&#x27;</span>, BLOOMFILTER =&gt; <span class="string">&#x27;ROW&#x27;</span>, CACHE_INDEX_ON_WRITE =&gt; <span class="string">&#x27;false&#x27;</span>, IN_MEMORY =&gt; <span class="string">&#x27;false&#x27;</span>, CACHE_BLOOMS_ON_WRITE =&gt; <span class="string">&#x27;false&#x27;</span>, PREFETCH_BLOCKS_ON_OPEN =&gt; <span class="string">&#x27;false&#x27;</span>, COMPRESSION =&gt; <span class="string">&#x27;NONE&#x27;</span>, BLOCKCACHE =&gt; <span class="string">&#x27;true&#x27;</span>, BLOCKSIZE =&gt; <span class="string">&#x27;65536&#x27;</span>&#125;</span><br><span class="line">2 row(s)</span><br><span class="line">Took 0.3826 seconds</span><br><span class="line"></span><br><span class="line">hbase(main):003:0&gt; scan <span class="string">&#x27;sdutcm:bigdata&#x27;</span></span><br><span class="line">ROW                                      COLUMN+CELL</span><br><span class="line"> 2001                                    column=info:name, timestamp=1719026353219, value=wang</span><br><span class="line">1 row(s)</span><br><span class="line">Took 0.2295 seconds</span><br><span class="line">hbase(main):004:0&gt; </span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>启动和关闭 <code>HBase Shell</code> 的命令</p>
+<p>启动 <code>HBase Shell</code> 之前需要保证 <code>ZooKeeper</code>、<code>Hadoop HDFS</code> 和 <code>HBase</code> 已经启动。可以使用 <code>hbase shell</code> 进入 <code>HBase Shell</code>，在 <code>HBase Shell</code> 中可以使用 <code>exit</code> 或 <code>quit</code> 退出。</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">[subowen@bigdata ~]$ zkServer.sh start</span><br><span class="line">ZooKeeper JMX enabled by default</span><br><span class="line">Using config: /home/subowen/apps/zookeeper-3.4.12/bin/../conf/zoo.cfg</span><br><span class="line">Starting zookeeper ... STARTED</span><br><span class="line"></span><br><span class="line">[subowen@bigdata ~]$ zkServer.sh status</span><br><span class="line">ZooKeeper JMX enabled by default</span><br><span class="line">Using config: /home/subowen/apps/zookeeper-3.4.12/bin/../conf/zoo.cfg</span><br><span class="line">Mode: standalone</span><br><span class="line"></span><br><span class="line">[subowen@bigdata ~]$ start-dfs.sh</span><br><span class="line">Starting namenodes on [bigdata]</span><br><span class="line">bigdata: starting namenode, logging to /home/subowen/apps/hadoop-2.7.6/logs/hadoop-subowen-namenode-bigdata.out</span><br><span class="line">bigdata: starting datanode, logging to /home/subowen/apps/hadoop-2.7.6/logs/hadoop-subowen-datanode-bigdata.out</span><br><span class="line">Starting secondary namenodes [0.0.0.0]</span><br><span class="line">0.0.0.0: starting secondarynamenode, logging to /home/subowen/apps/hadoop-2.7.6/logs/hadoop-subowen-secondarynamenode-bigdata.out</span><br><span class="line"></span><br><span class="line">[subowen@bigdata ~]$ start-hbase.sh</span><br><span class="line">running master, logging to /home/subowen/apps/hbase-2.1.8/logs/hbase-subowen-master-bigdata.out</span><br><span class="line">bigdata: running regionserver, logging to /home/subowen/apps/hbase-2.1.8/logs/hbase-subowen-regionserver-bigdata.out</span><br><span class="line"></span><br><span class="line">[subowen@bigdata ~]$ jps</span><br><span class="line">1746 NameNode</span><br><span class="line">1572 QuorumPeerMain</span><br><span class="line">2071 SecondaryNameNode</span><br><span class="line">2874 Jps</span><br><span class="line">2379 HRegionServer</span><br><span class="line">1852 DataNode</span><br><span class="line">2285 HMaster</span><br><span class="line"></span><br><span class="line">[subowen@bigdata ~]$ hbase shell</span><br><span class="line">2024-07-05 22:47:57,331 WARN  [main] util.NativeCodeLoader: Unable to load native-hadoop library <span class="keyword">for</span> your platform... using builtin-java classes <span class="built_in">where</span> applicable</span><br><span class="line">HBase Shell</span><br><span class="line">Use <span class="string">&quot;help&quot;</span> to get list of supported commands.</span><br><span class="line">Use <span class="string">&quot;exit&quot;</span> to quit this interactive shell.</span><br><span class="line">For Reference, please visit: http://hbase.apache.org/2.0/book.html<span class="comment">#shell</span></span><br><span class="line">Version 2.1.8, rd8333e556c8ed739cf39dab58ddc6b43a50c0965, Tue Nov 19 15:29:04 UTC 2019</span><br><span class="line">Took 0.0051 seconds</span><br><span class="line">hbase(main):001:0&gt; <span class="built_in">exit</span></span><br><span class="line"></span><br><span class="line">[subowen@bigdata ~]$ hbase shell</span><br><span class="line">2024-07-05 22:52:46,337 WARN  [main] util.NativeCodeLoader: Unable to load native-hadoop library <span class="keyword">for</span> your platform... using builtin-java classes <span class="built_in">where</span> applicable</span><br><span class="line">HBase Shell</span><br><span class="line">Use <span class="string">&quot;help&quot;</span> to get list of supported commands.</span><br><span class="line">Use <span class="string">&quot;exit&quot;</span> to quit this interactive shell.</span><br><span class="line">For Reference, please visit: http://hbase.apache.org/2.0/book.html<span class="comment">#shell</span></span><br><span class="line">Version 2.1.8, rd8333e556c8ed739cf39dab58ddc6b43a50c0965, Tue Nov 19 15:29:04 UTC 2019</span><br><span class="line">Took 0.0025 seconds</span><br><span class="line">hbase(main):001:0&gt; quit</span><br><span class="line">[subowen@bigdata ~]$</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>启动<code>ZooKeeper</code>和查看 <code>ZooKeeper</code> 的运行状态的命令</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[subowen@bigdata ~]$ zkServer.sh start</span><br><span class="line">ZooKeeper JMX enabled by default</span><br><span class="line">Using config: /home/subowen/apps/zookeeper-3.4.12/bin/../conf/zoo.cfg</span><br><span class="line">Starting zookeeper ... STARTED</span><br><span class="line"></span><br><span class="line">[subowen@bigdata ~]$ zkServer.sh status</span><br><span class="line">ZooKeeper JMX enabled by default</span><br><span class="line">Using config: /home/subowen/apps/zookeeper-3.4.12/bin/../conf/zoo.cfg</span><br><span class="line">Mode: standalone</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p>修改表结构的命令</p>
+<p>使用 <code>alter</code> 命令可以对表的结构进行修改：</p>
+<p>表名创建时写的所有和列族相关的信息，都可以后续通过<code>alter</code>修改，包括<strong>增加</strong>、<strong>删除</strong>列族。</p>
+<p>① 增加列族和修改信息都使用覆盖的方法</p>
+<p>​	修改列族的版本，<code>VERSIONS =&gt; 6</code>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hbase(main):001:0&gt; alter &#x27;bigdata:person&#x27;, NAME =&gt; &#x27;name&#x27;, VERSIONS =&gt; 6</span><br><span class="line">Updating all regions with the new schema...</span><br><span class="line">1/1 regions updated.</span><br><span class="line">Done.</span><br><span class="line">Took 4.0145 seconds</span><br></pre></td></tr></table></figure>
+
+<p>​	添加列族 <code>tel</code>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hbase(main):002:0&gt; alter &#x27;bigdata:person&#x27;, NAME =&gt; &#x27;tel&#x27;, VERSIONS =&gt; 6</span><br><span class="line">Updating all regions with the new schema...</span><br><span class="line">1/1 regions updated.</span><br><span class="line">Done.</span><br><span class="line">Took 2.4498 seconds</span><br></pre></td></tr></table></figure>
+
+<p>​	查看修改后的数据：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">hbase(main):003:0&gt; describe &#x27;bigdata:person&#x27;</span><br><span class="line">Table bigdata:person is ENABLED</span><br><span class="line">bigdata:person</span><br><span class="line">COLUMN FAMILIES DESCRIPTION</span><br><span class="line">&#123;NAME =&gt; &#x27;msg&#x27;, VERSIONS =&gt; &#x27;6&#x27;, EVICT_BLOCKS_ON_CLOSE =&gt; &#x27;false&#x27;, NEW_VERSION_BEHAVIOR =&gt; &#x27;false&#x27;, KEEP_DELETED_CELLS =&gt; &#x27;FALSE&#x27;, CACHE_DATA_ON_WRITE =&gt; &#x27;fal</span><br><span class="line">se&#x27;, DATA_BLOCK_ENCODING =&gt; &#x27;NONE&#x27;, TTL =&gt; &#x27;FOREVER&#x27;, MIN_VERSIONS =&gt; &#x27;0&#x27;, REPLICATION_SCOPE =&gt; &#x27;0&#x27;, BLOOMFILTER =&gt; &#x27;ROW&#x27;, CACHE_INDEX_ON_WRITE =&gt; &#x27;false&#x27;, IN</span><br><span class="line">_MEMORY =&gt; &#x27;false&#x27;, CACHE_BLOOMS_ON_WRITE =&gt; &#x27;false&#x27;, PREFETCH_BLOCKS_ON_OPEN =&gt; &#x27;false&#x27;, COMPRESSION =&gt; &#x27;NONE&#x27;, BLOCKCACHE =&gt; &#x27;true&#x27;, BLOCKSIZE =&gt; &#x27;65536&#x27;&#125;</span><br><span class="line"></span><br><span class="line">&#123;NAME =&gt; &#x27;name&#x27;, VERSIONS =&gt; &#x27;5&#x27;, EVICT_BLOCKS_ON_CLOSE =&gt; &#x27;false&#x27;, NEW_VERSION_BEHAVIOR =&gt; &#x27;false&#x27;, KEEP_DELETED_CELLS =&gt; &#x27;FALSE&#x27;, CACHE_DATA_ON_WRITE =&gt; &#x27;fa</span><br><span class="line">lse&#x27;, DATA_BLOCK_ENCODING =&gt; &#x27;NONE&#x27;, TTL =&gt; &#x27;FOREVER&#x27;, MIN_VERSIONS =&gt; &#x27;0&#x27;, REPLICATION_SCOPE =&gt; &#x27;0&#x27;, BLOOMFILTER =&gt; &#x27;ROW&#x27;, CACHE_INDEX_ON_WRITE =&gt; &#x27;false&#x27;, I</span><br><span class="line">N_MEMORY =&gt; &#x27;false&#x27;, CACHE_BLOOMS_ON_WRITE =&gt; &#x27;false&#x27;, PREFETCH_BLOCKS_ON_OPEN =&gt; &#x27;false&#x27;, COMPRESSION =&gt; &#x27;NONE&#x27;, BLOCKCACHE =&gt; &#x27;true&#x27;, BLOCKSIZE =&gt; &#x27;65536&#x27;&#125;</span><br><span class="line"></span><br><span class="line">&#123;NAME =&gt; &#x27;tel&#x27;, VERSIONS =&gt; &#x27;6&#x27;, EVICT_BLOCKS_ON_CLOSE =&gt; &#x27;false&#x27;, NEW_VERSION_BEHAVIOR =&gt; &#x27;false&#x27;, KEEP_DELETED_CELLS =&gt; &#x27;FALSE&#x27;, CACHE_DATA_ON_WRITE =&gt; &#x27;fal</span><br><span class="line">se&#x27;, DATA_BLOCK_ENCODING =&gt; &#x27;NONE&#x27;, TTL =&gt; &#x27;FOREVER&#x27;, MIN_VERSIONS =&gt; &#x27;0&#x27;, REPLICATION_SCOPE =&gt; &#x27;0&#x27;, BLOOMFILTER =&gt; &#x27;ROW&#x27;, CACHE_INDEX_ON_WRITE =&gt; &#x27;false&#x27;, IN</span><br><span class="line">_MEMORY =&gt; &#x27;false&#x27;, CACHE_BLOOMS_ON_WRITE =&gt; &#x27;false&#x27;, PREFETCH_BLOCKS_ON_OPEN =&gt; &#x27;false&#x27;, COMPRESSION =&gt; &#x27;NONE&#x27;, BLOCKCACHE =&gt; &#x27;true&#x27;, BLOCKSIZE =&gt; &#x27;65536&#x27;&#125;</span><br><span class="line">3 row(s)</span><br><span class="line">Took 0.0795 seconds</span><br></pre></td></tr></table></figure>
+
+<p>② 删除列族</p>
+<p>​	删除列族可以用以下两种方式：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hbase(main):001:0&gt; alter &#x27;bigdata:person&#x27;, NAME =&gt; &#x27;tel&#x27;, METHOD =&gt; &#x27;delete&#x27;</span><br><span class="line">Updating all regions with the new schema...</span><br><span class="line">1/1 regions updated.</span><br><span class="line">Done.</span><br><span class="line">Took 2.1046 seconds</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hbase(main):002:0&gt; alter &#x27;bigdata:person&#x27;, &#x27;delete&#x27; =&gt; &#x27;msg&#x27;</span><br><span class="line">Updating all regions with the new schema...</span><br><span class="line">1/1 regions updated.</span><br><span class="line">Done.</span><br><span class="line">Took 2.9721 seconds</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p><code>HBase</code> 的 <code>Java API</code>中，数据表描述的对象是什么？<code>TableDescriptor</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TableDescriptor</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p><code>ZooKeeper</code> 的访问端口号，<code>HBase</code> 的Web访问端口号</p>
+<p><code>ZooKeeper</code> 的访问端口号为 <code>2181</code></p>
+<p><code>HBase</code> 的 Web 访问端口号为 <code>16010</code></p>
+</li>
+<li><p>修改表中列族的<code>Version</code>版本的命令</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter <span class="string">&#x27;table_name&#x27;</span>, &#123;NAME =&gt; <span class="string">&#x27;column_family&#x27;</span>, VERSIONS =&gt; number_of_versions&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="9">
+<li><p>删除表中数据的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete <span class="string">&#x27;ns:tb&#x27;</span>, <span class="string">&#x27;rk&#x27;</span>, <span class="string">&#x27;cf:col&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动和关闭ZooKeeper的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启动 ZooKeeper</span></span><br><span class="line">zkServer.sh start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭 ZooKeeper</span></span><br><span class="line">zkServer.sh stop</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>更新表数据的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter <span class="string">&#x27;ns:tb&#x27;</span>, &#123;NAME =&gt; <span class="string">&#x27;cf:col&#x27;</span>, VERSIONS =&gt; 5&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>HBase安装时，配置文件有那几个？</p>
+<ul>
+<li><code>hbase-env.sh</code></li>
+<li><code>hbase-site.xml</code></li>
+<li><code>regionservers</code></li>
+<li><code>.bashrc</code></li>
+</ul>
+</li>
+<li><p>关于NoSQL数据库有哪些？</p>
+<ul>
+<li><code>HBase</code></li>
+<li><code>Cassandra</code></li>
+<li><code>BigTable</code></li>
+</ul>
+</li>
+<li><p>删除表操作</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">disable</span> <span class="string">&#x27;ns:tb&#x27;</span></span><br><span class="line">drop <span class="string">&#x27;ns:tb&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="15">
+<li><p>HBase进程名，ZooKeeper 的进程名等相关进程</p>
+<ul>
+<li><code>HMaster</code></li>
+<li><code>HRegionServer</code></li>
+<li><code>QuorumPeerMain</code></li>
+</ul>
+</li>
+<li><p><code>HBase</code> 依托于哪个文件存储系统？</p>
+<p><code>HBase</code> 主要依托于 <code>Hadoop HDFS</code>。</p>
+</li>
+<li><p>创建表的语法结构</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create <span class="string">&#x27;ns:tb&#x27;</span>, &#123;NAME =&gt; <span class="string">&#x27;cf&#x27;</span>, VERSIONS=5&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查询表数据的Shell语法</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; <span class="string">&#x27;cf:col&#x27;</span>&#125;</span><br><span class="line"></span><br><span class="line">scan <span class="string">&#x27;ns:tb&#x27;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>什么是列族<code>COLUMN FAMILY</code></p>
+</li>
+<li><p>HBase的数据类型</p>
+<ul>
+<li>数据类型<ul>
+<li>基本数据类型<ul>
+<li>字符串(String)：用于存储文本数据，如名称、描述等。</li>
+<li>整数(Int)：用于存储整数数据，如计数、编号等。</li>
+<li>浮点数(Float)：用于存储小数数据，如金额、比率等。</li>
+<li>布尔值(Boolean)：用于存储逻辑值，如是否、有效等。</li>
+</ul>
+</li>
+<li>复合数据类型<ul>
+<li>列族(Column Family)：列族是HBase表中数据的组织方式，用于存储一组相关的列。列族是HBase表中数据的基本组织单位，每个列族对应一个数据节点。</li>
+<li>列(Column)：列是HBase表中数据的基本单位，用于存储一组相关的单元格。列可以包含多个单元格，每个单元格对应一个数据值。</li>
+<li>单元格(Cell)：单元格是HBase表中数据的基本单位，用于存储一组相关的数据值。单元格包含一个键(Row Key)、一个列(Column)和一个值(Value)。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>数据模型<ul>
+<li>NameSpace：命名空间，类似于关系型数据库的 <code>Database</code> 概念，每个命名空间下有多个表。HBase 两个自带的命名空间，分别是 <code>hbase</code> 和 <code>default</code>，<code>hbase</code> 中存放的是 <code>HBase</code> 内置的表，<code>default</code>表是用户默认使用的命名空间。</li>
+<li>Table：类似于关系型数据库的表概念。不同的是，HBase 定义表时只需要声明列族即可，不需要声明具体的列。因为数据存储是稀疏的，所以往 HBase 写入数据时，字段可以动态、按需指定。因此，和关系型数据库相比，HBase 能够轻松应对字段变更的场景。</li>
+<li>Row：<code>HBase</code> 表中的每行数据都由一个 <strong>RowKey</strong> 和多个 <strong>Column</strong>（列）组成，数据是按照 <code>RowKey</code> 的字典顺序存储的，并且查询数据时只能根据 <code>RowKey</code> 进行检索，所以 <code>RowKey</code> 的设计十分重要。</li>
+<li>Column：<code>HBase</code> 中的每个列都由 <code>Column Family</code>(列族)和 <code>Column Qualifier</code>（列限定符）进行限定，例如 <code>info：name</code>，<code>info：age</code>。建表时，只需指明列族，而列限定符无需预先定义。</li>
+<li>Time Stamp：用于标识数据的不同版本<code>Version</code>，每条数据写入时，系统会自动为其加上该字段，其值为写入 <code>HBase</code> 的时间。</li>
+<li>Cell：由 <code>&#123;rowkey, column Family:Column Qualifier, timestamp&#125;</code> 唯一确定的单元。<code>Cell</code> 中的数据全部是字节码形式存贮。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="判断题"><a href="#判断题" class="headerlink" title="判断题"></a>判断题</h3><ol>
+<li><p><code>HBase</code> 本身是用 <code>C++</code> 语言编写的，因此具有很高的执行效率。（ × ）</p>
+<p><code>HBase</code> 本身是由 <code>Java</code> 语言编写的，尽管使用 <code>Java</code>，其执行效率还是较高的。</p>
+</li>
+<li><p><code>HBase</code> 优化目前主要工作集中于 <code>Rowkey</code> 优化。（ × ）</p>
+<p><code>HBase</code> 的优化目前主要工作集中在 <code>RowKey</code> 的设计、参数优化、<code>JVM</code>调优等方面。</p>
+</li>
+<li><p>可以想象 <code>HBase</code> 是通过**”三维”**的表来存储数据的，通过时间戳保存数据的历史版本。（ √ ）</p>
+</li>
+<li><p>安装 <code>HBase</code> 完全分布式时，需要确保 <code>SSH</code> 和 <code>JDK</code> 是可以正常使用的。（ √ ）</p>
+<p>在安装 HBase 的完全分布式部署时，确保 <code>SSH</code> 和 <code>JDK</code> 可以正常使用是非常重要的。具体来说：</p>
+<ul>
+<li><p><strong>SSH</strong>：在分布式部署中，<code>HBase</code> 的各个节点之间需要进行通信和协作，而 <code>SSH</code> 是用于在不同节点之间建立安全连接的工具。确保节点之间可以互相访问、通信和传输文件是部署 <code>HBase</code> 所必需的。通常需要设置免密登录，以便在节点之间进行信息交换而无需手动输入密码。</p>
+</li>
+<li><p><strong>JDK</strong>：HBase 是基于 <code>Java</code> 编程语言开发的，因此必须确保在每个节点上安装并配置了适当的 <code>JDK</code>。<code>HBase</code> 运行需要 <code>Java</code> 环境，且为了确保 <code>HBase</code> 能够正常工作，必须保证每个节点都能够使用正确的 <code>JDK</code> 版本。</p>
+</li>
+</ul>
+</li>
+<li><p><code>Hadoop</code> 中引入 <code>HBase</code> 的其中一个原因是：<code>HDFS</code> 在处理连续数据时比较吃力。（ × ）·</p>
+<p><code>HDFS</code> 的设计目标之一就是为了有效地处理大规模数据，包括连续数据（如大文件、数据流等）和离散数据（如小文件、批量数据等）。<code>Hadoop</code> 中之所以引入 <code>HBase</code>，是需要 <code>HBase</code> 提供实时访问数据的能力，使得 <code>Hadoop</code> 生态系统更全面（此外还有高可伸缩性、高容错、多版本策略等）。</p>
+</li>
+<li><p>利用 <code>HBase</code> 技术可在廉价 <code>PC Server</code> 上搭建起大规模结构化存储集群。（ √ ）</p>
+</li>
+<li><p><code>HBase</code> 是 <code>Hadoop</code> 生态系统的一个组成部分。（ √ ）</p>
+<p><code>HBase</code> 是继 <code>Google Bigtable</code> 之后创建的分布式、开源、版本化、非关系型数据库。它是 <code>Hadoop</code> 生态系统的重要组件，利用 <code>HDFS</code> 的容错功能，提供对数据的实时读写访问。 <code>HBase</code> 尽管是数据库，但也可以称为数据存储系统，因为它不提供触发器、查询语言和二级索引等 <code>RDBMS</code> 功能。</p>
+</li>
+<li><p>使用 <code>HBase</code> 时，无需启动服务就可以直接在开发环境中调用 <code>HBase</code> 的相关功能。（ × ）</p>
+<p><code>HBase</code> 是基于 <code>Hadoop</code> 的，在使用 <code>HBase</code> 之前需要启动 <code>ZooKeeper</code> 和 <code>Hadoop</code> 才能使用 <code>HBase</code>。</p>
+</li>
+<li><p>配置 <code>HBase</code> 分布式部署的过程中，可以通过 <code>cp</code> 命令把文件复制到运行在不同机器上的节点中。（ × ）</p>
+<p>可以使用 <code>scp</code> 命令、<code>rsync</code>命令，或者基于 <code>rsync</code> 编写工具 <code>xsync</code> 进行传输。</p>
+</li>
+</ol>
+<h3 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h3><ol>
+<li><p>判断表是否存在，禁用表，删除表，创建表，查看命名空间等 <code>Shell</code> 命令。</p>
+<ul>
+<li>判断表是否存在 ：<code>exists &#39;namespace_name:table_name&#39;</code></li>
+<li>禁用&#x2F;启用表：<code>disable &#39;namespace_name:table_name&#39;</code> &#x2F; <code>enable namespace_name:table_name</code></li>
+<li>删除表：删除表之前需要禁用表，<code>disable &#39;namespace_name:table_name&#39;</code>，然后再删除表，<code>drop &#39;namespace_name:tablename&#39;</code></li>
+<li>创建表：<code>create &#39;namespace_name:table_name&#39;, &#123;NAME =&gt; &#39;cf1&#39;, VERSION=5&#125;, &#123;NAME =&gt; &#39;cf2&#39;, VERSION=5&#125;</code></li>
+<li>查看命名空间：<code>list_namespace</code></li>
+</ul>
+</li>
+<li><p><code>HBase</code> 的进程有哪些：关于这些进程的详细说明见 <a href="https://hello-nilera.com/2024/06/02/QuickPassHBase/"><code>QuickPassHBase</code></a> 或 <strong>简答题 T4</strong>。</p>
+<ul>
+<li><code>HBase</code> 的主要进程：<code>HMaster</code>、<code>HRegionServer</code></li>
+<li><code>HBase</code> 所依赖的两个外部的服务：<code>ZooKeeper</code>、<code>HDFS</code></li>
+</ul>
+</li>
+<li><p>行键是什么：<code>rowkey</code></p>
+<p>在 <code>HBase</code> 中，行键唯一标识了 <code>HBase</code> 表的一行，可以通过单个行键或行键区间的方式访问表。行键保存为 <em>字节数组</em> ，以<em>字典序</em> 排序存储。</p>
+</li>
+<li><p><code>HBase</code> 是一个什么样的分布式存储系统。（非关系型）</p>
+<p><code>Apache HBase™</code> 是以 <code>HDFS</code> 为数据存储的，一种<strong>分布式</strong>、<strong>可扩展</strong>的 <code>NoSQL</code> 数据库。<strong>HBase</strong> 是一款面向列存储，用于存储处理海量数据的 <strong>NoSQL</strong> 数据库。</p>
+<p><em><strong>HBase</strong></em> 的理论原型是 <strong>Google</strong> 的 <strong>BigTable</strong> 论文。他是一个<strong>高可靠性</strong>、<strong>高性能</strong>、<strong>面向列</strong>、<strong>可伸缩</strong>的<strong>分布式</strong>存储系统。</p>
+</li>
+</ol>
+<h3 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h3><ol>
+<li><p><code>HBase</code> 的基础核心组件有哪些？分别什么作用？</p>
+<ul>
+<li><p>HBase-Client<br>客户端，用来访问 <code>HBase</code> 集群。可以和 <code>Hbase</code> 交互，也可以和 <code>HRegionServer</code> 交互。通过 <code>HBase RPC</code> 来访问对应的接口。</p>
+<p>这里的客户端模式有多种，可以是 <code>Thrift</code>、<code>Avro</code>、<code>Rest</code> 等。</p>
+<p>另外，<code>hbase-client</code> 自身会缓存 <code>region</code> 的一些信息。</p>
+</li>
+<li><p>ZooKeeper<br>作用：</p>
+<ul>
+<li><code>HMaster</code> 的高可用</li>
+<li>存储 <code>ROOT</code> 表的地址、<code>HMaster</code> 的地址</li>
+<li>存储所有 <code>HRegionServer</code> 的状态，监控 <code>HRegionServer</code> 的上下限</li>
+<li>存储 <code>HBase</code> 的一些 <code>Schema</code> 和 <code>Table</code> 的元数据</li>
+</ul>
+</li>
+<li><p>HMaster</p>
+<p>HMaster可以启动多个，通过选举机制来保证只有一个 <code>HMaster</code> 正常运行并提供服务，其他的 <code>HMaster</code> 作为 <code>standby</code> 来保证高可用。<code>HMaster</code> 主要负责 <strong>表</strong> 和 <strong>Region</strong> 的管理工作。如：</p>
+<ul>
+<li>用户对表的增删改查</li>
+<li>管理 <code>RegionServer</code> 的负载均衡，调整 <code>Region</code> 的分布</li>
+<li>在 <code>RegionServer</code> 宕机或下线后，负责迁移 <code>RegionServer</code> 上的 <code>Region</code> 到其他的 <code>RegionServer</code> 上</li>
+<li><code>Region</code> 在分裂后，负责分配新的 <code>Region</code></li>
+</ul>
+</li>
+<li><p>HRegionServer<br><code>HRegionServer</code> 是 <code>HBase</code> 中真正的工作节点，主要负责响应用户的 I&#x2F;O 请求，向 HDFS 文件系统读写数据，以及 Region 的数据文件的合并和拆分等，是 HBase 中最核心的模块。</p>
+<p>在 <code>HBase</code> 中，一张表由多个的 <code>HRegion</code> 组成，一个 <code>HRegionServer</code> 中管理着多个 <code>HRegion</code> 对象。而一个 <code>HRegion</code> 由多个<code>HStore</code> 组成，每个<code>HStore</code>对象都对应着表的一个列族 （Column Family）。之后，一个<code>HStore</code>又由一个<code>MemStore</code>和多个<code>StoreFile</code>组成。这些 <code>StoreFile</code> 就是<code>hbase</code> 存储在 <code>HDFS</code>上的数据文件，<code>MemStore</code> 表示还在内存中未刷新到文件上的那些数据。</p>
+</li>
+</ul>
+</li>
+<li><p><code>HBase</code> 的写流程， 读流程？</p>
+<ul>
+<li><p>写流程</p>
+<p>写流程顺序正如 <code>API</code> 编写顺序，首先创建 <code>HBase</code> 的重量级连接。</p>
+<p>① 首先访问 <code>ZooKeeper</code>，获取 <code>hbase:meta</code> 表位于哪个 <code>Region Server</code> </p>
+<p>② 访问对应的 <code>Region Server</code>，获取 <code>hbase:meta</code> 表，将其缓存到连接中，作为连接属性 <code>MetaCache</code>，由于 <code>meta</code> 表具有一定的数据量，导致了创建连接比较慢；</p>
+<p>之后使用创建的连接获取 <code>Table</code>，这是一个轻量级的连接，只有在第一次创建的时候会检查表格是否存在访问<code>RegionServer</code>，之后在获取 <code>Table</code> 时不会访问 <code>RegionServer</code></p>
+<p>③ 调用 <code>Table</code> 的 <code>put</code> 方法写入数据，此时还需要解析 <code>RowKey</code>，对照缓存的 <code>MetaCache</code>，查看具体写入的位置有哪个 <code>RegionServer</code></p>
+<p>④ 将数据顺序写入（追加）到 <code>WAL</code>，此处写入是直接落盘的，并设置专门的线程控制 <code>WAL</code> 预写日志的滚动（类似 Flume）；</p>
+<p>⑤ 根据写入命令的 <code>RowKey</code> 和 <code>ColumnFamily</code> 查看具体写入到哪个 <code>MemStore</code>，并且在 <code>MemStore</code> 中排序</p>
+<p>⑥ 向客户端发送 <code>ACK</code></p>
+<p>⑦ 等达到 <code>MemStore</code> 的刷写时机后，将数据刷写到对应的 <code>Store</code> 中。</p>
+</li>
+<li><p>读流程</p>
+<p>读流程创建连接的方式同写流程。创建完连接后：</p>
+<p>① 创建 <code>Table</code> 对象发送 <code>get</code> 请求。</p>
+<p>② 优先访问 <code>Block Cache</code>（读缓存），查找是否之前读取过，并且可以读取 <code>HFile</code> 的索引信息和布隆过滤器。</p>
+<p>③ 不管读缓存中是否已经有数据了（可能已经过期了），都需要再次读取写缓存和 <code>store</code> 中的文件。</p>
+<p>④ 最终将所有读取到的数据合并版本，按照 <code>get</code> 的要求返回即可。</p>
+</li>
+</ul>
+</li>
+<li><p><code>HBase</code> 的特点有哪些？优点或缺点？</p>
+<p><em><strong>HBase的特点：</strong></em>(强 &#x2F; 自动 &#x2F; 高 &#x2F; 海集 &#x2F; 并 &#x2F; 列 &#x2F; 多 &#x2F; 块 &#x2F; 运行 &#x2F; 稀)</p>
+<ul>
+<li><p><strong>强一致性的读&#x2F;写</strong>：<code>HBase</code>不是”最终一致性”数据库，它非常适合于诸如高速计数器聚合等任务。</p>
+</li>
+<li><p><strong>自动分片</strong>：<code>HBase</code> 中的表通过 <code>Region</code> 分布在集群上，而且 <code>Region</code> 会随着数据的增长自动拆分和重新分布。</p>
+</li>
+<li><p><strong>高可靠性</strong>：自动 <code>RegionServer</code> 故障转移，<code>WAL</code> 机制保证了数据写入时不会因集群异常而导致写入数据丢失，<code>Replication</code> 机制保证了在集群出现严重的问题时，数据不会发生丢失或损坏。而且 <code>HBase</code> 底层使用 <code>HDFS</code>，<code>HDFS</code> 本身也有备份。</p>
+</li>
+<li><p><strong><code>Hadoop/HDFS</code> 集成&amp;海量存储</strong>：，<code>HBase</code>支持 <code>HDFS</code>开箱即用作为其分布式文件系统。HBase 作为一个开源的分布式 <code>Key-Value</code> 数据库，其主要作用是面向 <strong>PB</strong> 级别数据的实时入库和快速随机访问。这主要源于上述易扩展的特点，使得 <code>HBase</code> 通过扩展来存储海量的数据。</p>
+</li>
+<li><p><strong>并行处理</strong>：<code>HBase</code> 通过 <code>MapReduce</code> 支持大规模并行处理，将 <code>HBase</code> 用作源和接收器。</p>
+</li>
+<li><p><strong>列式存储</strong>：<code>HBase</code> 是根据列族来存储数据的。列族下面可以有非常多的列。列式存储的最大好处就是，其数据在表中是按照某列存储的，这样在查询只需要少数几个字段时，能大大减少读取的数据量。（面向列）</p>
+</li>
+<li><p><strong>多种语言的 API</strong>：<code>HBase</code> 支持使用 <code>Java</code> 的 <code>API</code> 来编程进行数据的存取，还支持使用 <code>Thrift</code> 语言和 <code>REST</code> 语言的 <code>API</code> 来编程进行数据的存取。</p>
+</li>
+<li><p><strong>块缓存和布隆过滤器</strong>：<code>HBase</code>支持 <code>Block Cache</code> 和 <code>Bloom</code>过滤器进行大容量查询优化。</p>
+</li>
+<li><p><strong>运行管理</strong>：<code>HBase</code> 为业务洞察和 <code>JMX</code> 度量提供内置网页。</p>
+</li>
+<li><p><strong>稀疏性</strong>：为空的列可以不占存储空间，表可以设计的非常稀疏。</p>
+</li>
+</ul>
+<p><em><strong>HBase 的优点和缺点</strong></em></p>
+<ul>
+<li><p>HBase的优点：(动节&#x2F;海存&#x2F;负载&#x2F;并拓)</p>
+<ul>
+<li><strong>动态增加&amp;节省空间</strong>：在传统的关系数据库中，如果数据结构发生了变化，就需要停机维护，而且需要修改表结构，而在 HBase 中数据表内的列可以做到动态增加，并且列为空的时候不存储数据，从而节省存储空间。</li>
+<li><strong>海量数据存储</strong>：<code>HBase</code> 适合存储 <strong>PB</strong> 数量级的海量数据，<strong>PB</strong> 级的数据在只采用廉价 PC 来存储的情况下，也可以在几十到一百毫秒内返回数据。这与 <code>HBase</code> 的极易扩展息息相关，正因如此，HBase 为海量数据的存储提供了便利。</li>
+<li><strong>负载均衡</strong>：传统的通用关系数据库无法应对在数据规模剧增时导致的系统扩展性问题和性能问题。<code>HBase</code> 可以做到自动切分数据，并且会随着数据的增长自动地拆分和重新分布。</li>
+<li><strong>高并发</strong>：<code>HBase</code> 可以提供高并发的读写操作，而且可以利用廉价的计算机来处理超过 10 亿行的表数据</li>
+<li><strong>高拓展性</strong>：<code>HBase</code> 具有可伸缩性，如果当前集群的处理能力明显下降，可以增加集群的服务器数量来维持甚至提高处理能力。</li>
+</ul>
+</li>
+<li><p><code>HBase</code> 的缺点：（条查&#x2F;复杂&#x2F;JOIN&#x2F;ACID&#x2F;SQL）</p>
+<ul>
+<li><strong>不支持条件查询</strong>：不能支持条件查询，只支持按照 <code>RowKey</code>（行键）来查询，也就是只能按照主键来查询。这样在设计 <code>RowKey</code> 时，就需要完美的方案以设计出符合业务的查询。</li>
+<li><strong>架构设计复杂</strong>：架构设计复杂，且使用 <code>HDFS</code> 作为分布式存储，因此只是存储少量数据，它也不会很快。在大数据量时，它慢的不会很明显。</li>
+<li><strong>不支持 <code>Join</code> 操作</strong>：<code>HBase</code> 不支持表的关联操作，因此数据分析是 <code>HBase</code> 的弱项。常见的 <code>group by</code> 或 <code>order by</code> 只能通过编写 <code>MapReduce</code> 来实现。</li>
+<li><strong>不支持ACID</strong>：<code>HBase</code>部分支持了 <code>ACID</code></li>
+<li><strong>不支持SQL语句查询</strong>：查询 <code>HBase</code> 时不支持通过 <code>SQL</code> 语句进行查询。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>Master</code> 和 <code>RegionServer</code> 的作用是什么？</p>
+<p><code>HBase</code> 包含一个 <code>Master</code> 和许多个 <code>RegionServer</code> 。</p>
+<ul>
+<li><p><code>Master</code>：实现类为 <code>HMaster</code>，负责监控集群中所有的 <code>RegionServer</code> 实例。主要作用如下：</p>
+<ul>
+<li><p>管理元数据表格 <code>hbase:meta</code>，接收用户对表格创建修改删除的命令并执行</p>
+</li>
+<li><p>监控 <code>Region</code> 是否需要进行负载均衡，故障转移和 <code>Region</code> 的拆分。</p>
+</li>
+</ul>
+</li>
+<li><p><code>RegionServer</code>：实现类为 <code>HRegionServer</code>，主要作用如下: </p>
+<ul>
+<li><p>负责数据 <code>Cell</code> 的处理，例如写入数据 <code>put</code>，查询数据 <code>get</code> 等。</p>
+</li>
+<li><p>拆分合并 <code>Region</code> 的实际执行者，有 <code>master</code> 监控，有 <code>RegionServer</code> 执行。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h3><h4 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h4><ol>
+<li><p>创建命名空间的 Shell</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create_namespace <span class="string">&#x27;namespace_name&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建表的 Shell</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create <span class="string">&#x27;namespace_name:table_name&#x27;</span>, &#123;NAME =&gt; <span class="string">&#x27;cf1&#x27;</span>, VERSION =&gt; 5&#125; </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改表的 Shell</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter <span class="string">&#x27;namespace_name:table_name&#x27;</span>, NAME =&gt; <span class="string">&#x27;cf1&#x27;</span>, METHOD =&gt; <span class="string">&#x27;delete&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插入数据的 Shell</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">put <span class="string">&#x27;ns:tb&#x27;</span>, <span class="string">&#x27;rk&#x27;</span>, <span class="string">&#x27;cf:col&#x27;</span>, <span class="string">&#x27;value&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查询数据的 Shell</p>
+<ul>
+<li><code>get</code> 最大范围是一行数据，也可以进行列的过滤，读取的结果为多行 <code>Cell</code>。 <code>Cell</code> 的格式如下：<code>&#123;rowkey, column Familycolumn Qualifier, time Stamp&#125;</code>。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get <span class="string">&#x27;ns:tb&#x27;</span>, <span class="string">&#x27;rk&#x27;</span> , &#123;COLUMN =&gt; <span class="string">&#x27;cf:col&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>scan</code> 用于扫描数据，能够读取多行数据，不建议扫描过多的数据，推荐使用 <code>startRow</code> 和 <code>stopRow</code> 来控制读取的数据，默认范围<strong>左闭右开</strong>。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scan <span class="string">&#x27;namespace_name:table_name&#x27;</span>, &#123;STARTROW =&gt; <span class="string">&#x27;1001&#x27;</span>,STOPROW =&gt; <span class="string">&#x27;1002&#x27;</span>&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="API"><a href="#API" class="headerlink" title="API"></a>API</h4><p>读写操作时</p>
+<ol>
+<li>加载配置信息</li>
+<li>获取 <code>HBase</code> 的链接对象</li>
+<li>获取 <code>Admin</code> 对象</li>
+<li>构造 <code>TableName</code> 对象</li>
+<li>判断表是否存在</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">Connection</span> <span class="variable">connection</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        <span class="type">Configuration</span> <span class="variable">conf</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Configuration</span>();			<span class="comment">// 加载配置信息</span></span><br><span class="line">        conf.set(<span class="string">&quot;hbase.zookeeper.quorum&quot;</span>, <span class="string">&quot;bigdata&quot;</span>);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            connection = ConnectionFactory.createConnection(conf);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">closeConntction</span><span class="params">()</span> <span class="keyword">throw</span> IOException &#123;</span><br><span class="line">        <span class="keyword">if</span> (connection != <span class="literal">null</span>) &#123;</span><br><span class="line">            connection.close();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@brief</span> 判断表格是否存在</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> namespace 命名空间名</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> tableName 表名</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> true 存在; false 不存在</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">isTableExists</span><span class="params">(String namespace, String tableName)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">        <span class="comment">// 1. 获得 admin</span></span><br><span class="line">        <span class="type">Admin</span> <span class="variable">admin</span> <span class="operator">=</span> HBaseConnection.connection.getAdmin();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2. 使用对应的方法, 判断表格是否存在</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">result</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            result = admin.tableExists(TableName.valueOf(namespace, tableName));</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 3. 关闭 admin</span></span><br><span class="line">        admin.close();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 返回结果</span></span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@brief</span> 向表格中插入数据</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> namespace 命名空间名</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> tableName 表名</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> rowKey 行键</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> columnFamily 列族名</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> columnName 列名</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> value 插入值</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">putCell</span><span class="params">(String namespace,</span></span><br><span class="line"><span class="params">                               String tableName,</span></span><br><span class="line"><span class="params">                               String rowKey,</span></span><br><span class="line"><span class="params">                               String columnFamily,</span></span><br><span class="line"><span class="params">                               String columnName,</span></span><br><span class="line"><span class="params">                               String value)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">        <span class="comment">// 1. 获取 Table</span></span><br><span class="line">        <span class="type">Table</span> <span class="variable">table</span> <span class="operator">=</span> connection.getTable(TableName.valueOf(namespace, tableName));</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2. 调用相关方法插入数据</span></span><br><span class="line">        <span class="comment">// 2.1 创建 Put 对象</span></span><br><span class="line">        <span class="type">Put</span> <span class="variable">put</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Put</span>(Bytes.toBytes(rowKey));</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2.2. 给 Put 对象添加数据</span></span><br><span class="line">        put.addColumn(Bytes.toBytes(columnFamily), Bytes.toBytes(columnName), Bytes.toBytes(value));</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2.3 将对象写入对应的方法</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            table.put(put);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 3. 关闭 Table</span></span><br><span class="line">        table.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@brief</span> 读取数据 读取对应一行的某一列</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> namespace 命名空间名</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> tableName 表名</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> rowKey 行键</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> columnFamily 列族名</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> columnName 列名</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">getCells</span><span class="params">(String namespace,</span></span><br><span class="line"><span class="params">                                String tableName,</span></span><br><span class="line"><span class="params">                                String rowKey,</span></span><br><span class="line"><span class="params">                                String columnFamily,</span></span><br><span class="line"><span class="params">                                String columnName)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">        <span class="comment">// 1. 获取 Table</span></span><br><span class="line">        <span class="type">Table</span> <span class="variable">table</span> <span class="operator">=</span> connection.getTable(TableName.valueOf(namespace, tableName));</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2. 调用相关方法插入数据</span></span><br><span class="line">        <span class="comment">// 2.1 创建 Get 对象</span></span><br><span class="line">        <span class="type">Get</span> <span class="variable">get</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Get</span>(Bytes.toBytes(rowKey));   <span class="comment">// 如果此时不使用 addColumn 进行参数的添加, 此时则读取一整行的数据</span></span><br><span class="line">        <span class="comment">// 2.2 如果想读取某一列的数据, 需要添加对应的参数</span></span><br><span class="line">        get.addColumn(Bytes.toBytes(columnFamily), Bytes.toBytes(columnName));</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 2.3 也可以设置读取数据的版本</span></span><br><span class="line">        get.readAllVersions();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 3. 读取数据, 写入 Result 对象</span></span><br><span class="line">            <span class="type">Result</span> <span class="variable">result</span> <span class="operator">=</span> table.get(get);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 4. 处理数据</span></span><br><span class="line">            Cell[] cells = result.rawCells();</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 5. 测试方法: 直接把读取到的数据打印到控制台</span></span><br><span class="line">            <span class="comment">// 如果是实际开发, 需要再额外写方法, 对应处理数据</span></span><br><span class="line">            <span class="keyword">for</span> (Cell cell : cells) &#123;</span><br><span class="line">                <span class="comment">// Cell 存储数据比较底层, 需要进一步处理</span></span><br><span class="line">                <span class="type">String</span> <span class="variable">value</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(CellUtil.cloneValue(cell));</span><br><span class="line">                System.out.println(value);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 6. 关闭 Table</span></span><br><span class="line">        table.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throw</span> IOException &#123;</span><br><span class="line">        putCell(<span class="string">&quot;sdutcm&quot;</span>, <span class="string">&quot;bigdata&quot;</span>, <span class="string">&quot;2001&quot;</span>, <span class="string">&quot;info&quot;</span>, <span class="string">&quot;name&quot;</span>, <span class="string">&quot;zhangsan&quot;</span>);</span><br><span class="line">        connection.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/leslies2/p/9530378.html">Hadoop 综合揭秘——HBase的原理与应用 - 风尘浪子 - 博客园 (cnblogs.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u013332124/article/details/100125269">HBase的组件</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-06-02T14:43:53.000Z" title="2024/6/2 22:43:53">2024-06-02</time>发表</span><span class="level-item"><time dateTime="2024-07-07T13:04:01.539Z" title="2024/7/7 21:04:01">2024-07-07</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/">大数据技术</a><span> / </span><a class="link-muted" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/HBase/">HBase</a></span><span class="level-item">1 小时读完 (大约6723个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/06/02/QuickPassHBase/">QuickPassHBase</a></p><div class="content"><h2 id="快速上手HBase"><a href="#快速上手HBase" class="headerlink" title="快速上手HBase"></a>快速上手HBase</h2><p>[TOC]</p>
 <h3 id="⚙-1-HBase简介"><a href="#⚙-1-HBase简介" class="headerlink" title="⚙ 1. HBase简介"></a>⚙ 1. HBase简介</h3><h4 id="1-1-HBase的定义"><a href="#1-1-HBase的定义" class="headerlink" title="1.1 HBase的定义"></a>1.1 HBase的定义</h4><p><strong>Apache HBase</strong> 是以 HDFS 为数据存储的，一种分布式、可扩展的 NoSQL 数据库。</p>
 <p>HBase 的设计理念依据 Google 的 BigTable 论文，论文中对于数据模型的首句介绍。</p>
 <p><strong>BigTable是一个稀疏的、分布式的、持久的多维排序映射(Map)。该映射由行键、列键和时间戳索引作为键(Key)，映射中的每个值(Value)都是一个未解释的字节数组。</strong></p>
@@ -368,12 +717,12 @@
 <ul>
 <li><p>创建表 <code>create</code></p>
 <p><strong>常见用法：</strong></p>
-<p>① <code>create &#39;ns:tb&#39;, &#123;NAME =&gt; &#39;cf&#39;, VERSION =&gt; 5&#125;</code></p>
+<p>① <code>create &#39;ns:tb&#39;, &#123;NAME =&gt; &#39;cf&#39;, VERSIONS =&gt; 5&#125;</code></p>
 <p>​	在命名空间 <code>ns</code> 下，创建一张表 <code>tb</code>，定义一个列族 <code>cf</code>。</p>
 <p>② 当在默认命名空间<code>default</code>下创建表时，可以省略 <code>ns</code></p>
 <p>③ <code>create &#39;tb&#39;, &#39;cf1&#39;, &#39;cf2&#39;</code></p>
 <p>​	在默认命名空间<code>default</code>下，创建一张表<code>tb</code>，并定义两个列族 <code>cf1</code>、<code>cf2</code></p>
-<p>④ <code>create &#39;tb&#39;, &#123;NAME =&gt; &#39;cf1&#39;, VERSION =&gt; 5&#125;, &#123;NAME =&gt; &#39;cf2&#39;, VERSION =&gt; 5&#125;</code></p>
+<p>④ <code>create &#39;tb&#39;, &#123;NAME =&gt; &#39;cf1&#39;, VERSIONS =&gt; 5&#125;, &#123;NAME =&gt; &#39;cf2&#39;, VERSIONS =&gt; 5&#125;</code></p>
 <p>​	在默认命名空间<code>default</code>下，创建一张表<code>tb</code>，并定义两个列族 <code>cf1</code>、<code>cf2</code>，并同时指定两个列族的版本为 <code>5</code>。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hbase(main):001:0&gt; create &#x27;bigdata:person&#x27;, &#123;NAME =&gt; &#x27;name&#x27;, VERSIONS =&gt; 5&#125;, &#123;NAME =&gt; &#x27;msg&#x27;, VERSIONS =&gt; 5&#125;</span><br><span class="line">Created table bigdata:person</span><br><span class="line">Took 1.5638 seconds</span><br><span class="line">=&gt; Hbase::Table - bigdata:person</span><br></pre></td></tr></table></figure>
 </li>
@@ -418,7 +767,7 @@
 <p><strong>DML(Data Manipulation Language)数据操纵语言</strong>，主要是对数据进行增加、删除、修改操作。</p>
 <ul>
 <li><p>写入数据 <code>put</code></p>
-<p>在 HBase 中如果想要写入数据，只能添加结构中最底层的 <code>Cell</code>。可以手动写入时间戳指定 <code>Cell</code> 的版本，推荐不写，默认使用当前的系统时间。如果重复写入相同 <code>rowKey</code>，相同列的数据，会写入多个版本进行覆盖。所以他同时兼具<strong>写入</strong>和<strong>修改</strong>的功能。</p>
+<p>在 <code>HBase</code> 中如果想要写入数据，只能添加结构中最底层的 <code>Cell</code>。可以手动写入时间戳指定 <code>Cell</code> 的版本，推荐不写，默认使用当前的系统时间。如果重复写入相同 <code>rowKey</code>，相同列的数据，会写入多个版本进行覆盖。所以他同时兼具<strong>写入</strong>和<strong>修改</strong>的功能。</p>
 <p><strong>用法</strong>：</p>
 <p>① <code>put &#39;ns:tb&#39;, &#39;rk&#39;, &#39;col&#39;, &#39;value&#39;</code></p>
 <p>​	向命名空间<code>ns</code>中的<code>tb</code>表中的行键为<code>rk</code>，列为<code>col</code>的位置写入值<code>value</code>。其中<code>col</code>为<code>cf:col</code>（即<code>列族:列名</code>）的格式。</p>
@@ -436,7 +785,7 @@
 </li>
 </ul>
 <p>① <code>get</code>命令</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Some examples:</span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>											<span class="comment">#查看&#x27;r1&#x27;的数据</span></span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;TIMERANGE =&gt; [ts1, ts2]&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; <span class="string">&#x27;c1&#x27;</span>&#125;							<span class="comment">#过滤单列, 只显示 &#x27;c1&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; [<span class="string">&#x27;c1&#x27;</span>, <span class="string">&#x27;c2&#x27;</span>, <span class="string">&#x27;c3&#x27;</span>]&#125;			<span class="comment">#过滤多列, 只显示 &#x27;c1&#x27;, &#x27;c2&#x27;, &#x27;c3&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; <span class="string">&#x27;c1&#x27;</span>, TIMESTAMP =&gt; ts1&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; <span class="string">&#x27;c1&#x27;</span>, TIMERANGE =&gt; [ts1, ts2], VERSIONS =&gt; 4&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; <span class="string">&#x27;c1&#x27;</span>, TIMESTAMP =&gt; ts1, VERSIONS =&gt; 4&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;FILTER =&gt; <span class="string">&quot;ValueFilter(=, &#x27;binary:abc&#x27;)&quot;</span>&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, <span class="string">&#x27;c1&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, <span class="string">&#x27;c1&#x27;</span>, <span class="string">&#x27;c2&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, [<span class="string">&#x27;c1&#x27;</span>, <span class="string">&#x27;c2&#x27;</span>]</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;CONSISTENCY =&gt; <span class="string">&#x27;TIMELINE&#x27;</span>&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;CONSISTENCY =&gt; <span class="string">&#x27;TIMELINE&#x27;</span>, REGION_REPLICA_ID =&gt; 1&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Some examples:</span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>											<span class="comment">#查看&#x27;r1&#x27;的数据</span></span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;TIMERANGE =&gt; [ts1, ts2]&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; <span class="string">&#x27;c1&#x27;</span>&#125;						<span class="comment">#过滤单列, 只显示 &#x27;c1&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; [<span class="string">&#x27;c1&#x27;</span>, <span class="string">&#x27;c2&#x27;</span>, <span class="string">&#x27;c3&#x27;</span>]&#125;			<span class="comment">#过滤多列, 只显示 &#x27;c1&#x27;, &#x27;c2&#x27;, &#x27;c3&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; <span class="string">&#x27;c1&#x27;</span>, TIMESTAMP =&gt; ts1&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; <span class="string">&#x27;c1&#x27;</span>, TIMERANGE =&gt; [ts1, ts2], VERSIONS =&gt; 4&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;COLUMN =&gt; <span class="string">&#x27;c1&#x27;</span>, TIMESTAMP =&gt; ts1, VERSIONS =&gt; 4&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;FILTER =&gt; <span class="string">&quot;ValueFilter(=, &#x27;binary:abc&#x27;)&quot;</span>&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, <span class="string">&#x27;c1&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, <span class="string">&#x27;c1&#x27;</span>, <span class="string">&#x27;c2&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, [<span class="string">&#x27;c1&#x27;</span>, <span class="string">&#x27;c2&#x27;</span>]</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;CONSISTENCY =&gt; <span class="string">&#x27;TIMELINE&#x27;</span>&#125;</span></span><br><span class="line"><span class="meta prompt_">  hbase&gt; </span><span class="language-bash">t.get <span class="string">&#x27;r1&#x27;</span>, &#123;CONSISTENCY =&gt; <span class="string">&#x27;TIMELINE&#x27;</span>, REGION_REPLICA_ID =&gt; 1&#125;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">hbase(main):001:0&gt; get &#x27;bigdata:student&#x27;, &#x27;1001&#x27;</span><br><span class="line">COLUMN                                   CELL</span><br><span class="line"> info:name                               timestamp=1717580289267, value=wangwu</span><br><span class="line">1 row(s)</span><br><span class="line">Took 0.0645 seconds</span><br><span class="line"></span><br><span class="line">hbase(main):002:0&gt; get &#x27;bigdata:student&#x27;, &#x27;1001&#x27;, &#123;COLUMN =&gt; &#x27;info:name&#x27;&#125;</span><br><span class="line">COLUMN                                   CELL</span><br><span class="line"> info:name                               timestamp=1717580289267, value=wangwu</span><br><span class="line">1 row(s)</span><br><span class="line">Took 0.0107 seconds</span><br><span class="line"></span><br><span class="line">hbase(main):003:0&gt; get &#x27;bigdata:student&#x27;, &#x27;1003&#x27;, &#123;COLUMN =&gt; &#x27;info:age&#x27;&#125;</span><br><span class="line">COLUMN                                   CELL</span><br><span class="line"> info:age                                timestamp=1717580366636, value=10</span><br><span class="line">1 row(s)</span><br><span class="line">Took 0.0185 seconds</span><br></pre></td></tr></table></figure>
 
