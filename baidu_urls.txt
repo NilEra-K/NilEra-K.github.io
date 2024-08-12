@@ -1,5 +1,5 @@
+https://hello-nilera.com/2024/08/12/Windows-Build-llama-cpp/
 https://hello-nilera.com/2024/08/06/CPP-11-functional-bind/
 https://hello-nilera.com/2024/08/06/CPP-11-Enum-Class/
 https://hello-nilera.com/2024/08/05/Deploy-LLMs-ON-PC/
 https://hello-nilera.com/2024/08/01/LLM-General-Education/
-https://hello-nilera.com/2024/07/30/MyBatisPlus/
