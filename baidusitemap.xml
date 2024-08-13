@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hello-nilera.com/2024/08/13/Deploy-LLMs-ON-Linux/</loc>
+    <lastmod>2024-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/08/05/Deploy-LLMs-ON-PC/</loc>
+    <lastmod>2024-08-13</lastmod>
+  </url>
+  <url>
     <loc>https://hello-nilera.com/2024/08/12/Windows-Build-llama-cpp/</loc>
-    <lastmod>2024-08-12</lastmod>
+    <lastmod>2024-08-13</lastmod>
   </url>
   <url>
     <loc>https://hello-nilera.com/2024/03/26/Git%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</loc>
@@ -23,10 +31,6 @@
   <url>
     <loc>https://hello-nilera.com/2024/07/29/Cpp-Muti-Threaded/</loc>
     <lastmod>2024-08-06</lastmod>
-  </url>
-  <url>
-    <loc>https://hello-nilera.com/2024/08/05/Deploy-LLMs-ON-PC/</loc>
-    <lastmod>2024-08-05</lastmod>
   </url>
   <url>
     <loc>https://hello-nilera.com/2024/08/01/LLM-General-Education/</loc>
