@@ -20,6 +20,15 @@
   </url>
   
   <url>
+    <loc>https://hello-nilera.com/2024/08/01/LLM-General-Education/</loc>
+    
+    <lastmod>2024-08-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hello-nilera.com/2024/08/12/Windows-Build-llama-cpp/</loc>
     
     <lastmod>2024-08-13</lastmod>
@@ -49,7 +58,7 @@
   <url>
     <loc>https://hello-nilera.com/2024/08/06/CPP-11-functional-bind/</loc>
     
-    <lastmod>2024-08-06</lastmod>
+    <lastmod>2024-08-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -74,15 +83,6 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/2024/08/01/LLM-General-Education/</loc>
-    
-    <lastmod>2024-08-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hello-nilera.com/2024/07/30/MyBatisPlus/</loc>
     
     <lastmod>2024-07-31</lastmod>
@@ -95,6 +95,15 @@
     <loc>https://hello-nilera.com/2024/07/30/SpringCloud/</loc>
     
     <lastmod>2024-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/2024/06/22/DataVisualization-USE-R-ECHARTS/</loc>
+    
+    <lastmod>2024-07-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -130,7 +139,7 @@
   <url>
     <loc>https://hello-nilera.com/2024/07/24/NginxQuickIN/</loc>
     
-    <lastmod>2024-07-28</lastmod>
+    <lastmod>2024-07-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -140,15 +149,6 @@
     <loc>https://hello-nilera.com/2024/07/22/DockerQuickIN/</loc>
     
     <lastmod>2024-07-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/2024/06/22/DataVisualization-USE-R-ECHARTS/</loc>
-    
-    <lastmod>2024-07-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -173,6 +173,15 @@
   </url>
   
   <url>
+    <loc>https://hello-nilera.com/2024/06/12/SparkQuickIN/</loc>
+    
+    <lastmod>2024-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hello-nilera.com/2024/06/10/ScalaQuickIN/</loc>
     
     <lastmod>2024-06-30</lastmod>
@@ -182,9 +191,9 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/2024/06/12/SparkQuickIN/</loc>
+    <loc>https://hello-nilera.com/2024/06/11/OnlineTravelBigdataPlatform/</loc>
     
-    <lastmod>2024-06-29</lastmod>
+    <lastmod>2024-06-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -200,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/2024/04/12/20240412-%E4%B8%8B%E4%B8%80%E6%AD%A5%E8%AE%A1%E5%88%92/</loc>
+    <loc>https://hello-nilera.com/2024/03/20/PyTorch%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/</loc>
     
     <lastmod>2024-06-22</lastmod>
     
@@ -209,9 +218,18 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/2024/06/11/OnlineTravelBigdataPlatform/</loc>
+    <loc>https://hello-nilera.com/2024/03/17/hello-world/</loc>
     
-    <lastmod>2024-06-21</lastmod>
+    <lastmod>2024-06-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/2024/04/12/20240412-%E4%B8%8B%E4%B8%80%E6%AD%A5%E8%AE%A1%E5%88%92/</loc>
+    
+    <lastmod>2024-06-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -263,27 +281,18 @@
   </url>
   
   <url>
+    <loc>https://hello-nilera.com/2024/05/04/Stack/</loc>
+    
+    <lastmod>2024-05-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hello-nilera.com/2024/05/05/Hash/</loc>
     
     <lastmod>2024-05-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/2024/03/20/PyTorch%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/</loc>
-    
-    <lastmod>2024-05-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/2024/05/04/Stack/</loc>
-    
-    <lastmod>2024-05-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -316,15 +325,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://hello-nilera.com/2024/03/17/hello-world/</loc>
-    
-    <lastmod>2024-03-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://hello-nilera.com/</loc>
@@ -335,14 +335,14 @@
 
   
   <url>
-    <loc>https://hello-nilera.com/tags/Linux/</loc>
+    <loc>https://hello-nilera.com/tags/%E9%97%B2%E8%81%8A/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/tags/%E8%BD%AF%E4%BB%B6%E6%BA%90/</loc>
+    <loc>https://hello-nilera.com/tags/%E8%AE%A1%E5%88%92/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -357,20 +357,6 @@
   
   <url>
     <loc>https://hello-nilera.com/tags/Axure-RP-9/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/%E9%97%B2%E8%81%8A/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/%E8%AE%A1%E5%88%92/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -398,14 +384,21 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/tags/Git/</loc>
+    <loc>https://hello-nilera.com/tags/Kaggle/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/tags/VSCode/</loc>
+    <loc>https://hello-nilera.com/tags/CppDev/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/QT6/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -413,6 +406,118 @@
   
   <url>
     <loc>https://hello-nilera.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/ECharts/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/Tomcat/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/%E8%AF%AD%E6%B3%95%E7%82%B9/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/C-11-%E6%96%B0%E6%A0%87%E5%87%86/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/Linux/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/%E8%BD%AF%E4%BB%B6%E6%BA%90/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/EasyX/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/GameDev/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/LLMs/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/LM-Studio/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/PowerInfer/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/R/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/Docker/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/tags/Git/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -454,35 +559,14 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/tags/Kaggle/</loc>
+    <loc>https://hello-nilera.com/tags/JavaDev/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/tags/ECharts/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/Tomcat/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/CppDev/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/QT6/</loc>
+    <loc>https://hello-nilera.com/tags/MyBatis-Plus/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -510,91 +594,7 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/tags/EasyX/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/GameDev/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/R/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/Docker/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/JavaDev/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/MyBatis-Plus/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/LLMs/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/LM-Studio/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/PowerInfer/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/%E8%AF%AD%E6%B3%95%E7%82%B9/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/C-11-%E6%96%B0%E6%A0%87%E5%87%86/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <loc>https://hello-nilera.com/tags/VSCode/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -603,7 +603,7 @@
 
   
   <url>
-    <loc>https://hello-nilera.com/categories/Linux/</loc>
+    <loc>https://hello-nilera.com/categories/%E9%97%B2%E8%81%8A/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -617,21 +617,14 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/categories/%E9%97%B2%E8%81%8A/</loc>
+    <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/categories/Linux/%E8%BD%AF%E4%BB%B6%E6%BA%90/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Axure-RP-9/</loc>
+    <loc>https://hello-nilera.com/categories/CppDev/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -645,7 +638,70 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://hello-nilera.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Axure-RP-9/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/Linux/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Kaggle/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/CppDev/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/CppDev/QT6/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/CppDev/Gaming/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LLMs/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Docker/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/ECharts/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -659,21 +715,7 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/VSCode/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/PyTorch/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://hello-nilera.com/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -694,49 +736,14 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E5%93%88%E5%B8%8C-Hash/</loc>
+    <loc>https://hello-nilera.com/categories/Linux/%E8%BD%AF%E4%BB%B6%E6%BA%90/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E6%A0%88-Stack/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E6%A0%91-Tree/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Kaggle/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/ECharts/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/CppDev/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/CppDev/QT6/</loc>
+    <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/PyTorch/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -744,6 +751,13 @@
   
   <url>
     <loc>https://hello-nilera.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/CppDev/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -764,49 +778,7 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/categories/CppDev/Gaming/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://hello-nilera.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Docker/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/CppDev/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LLMs/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hello-nilera.com/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/bind/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -820,7 +792,35 @@
   </url>
   
   <url>
-    <loc>https://hello-nilera.com/categories/CppDev/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <loc>https://hello-nilera.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E5%93%88%E5%B8%8C-Hash/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/bind/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E6%A0%88-Stack/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E6%A0%91-Tree/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hello-nilera.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/VSCode/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
