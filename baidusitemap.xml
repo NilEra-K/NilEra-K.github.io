@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hello-nilera.com/2024/08/15/Virtual-Destructor-IN-Cpp/</loc>
+    <lastmod>2024-08-15</lastmod>
+  </url>
+  <url>
     <loc>https://hello-nilera.com/2024/08/13/Deploy-LLMs-ON-Linux/</loc>
     <lastmod>2024-08-14</lastmod>
   </url>
