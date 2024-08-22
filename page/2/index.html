@@ -35,7 +35,574 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/StarLogo.svg" alt="Hello, NilEra :-)" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">目录</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="/me">我</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/NilEra-K"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-07-30T14:36:18.000Z" title="2024/7/30 22:36:18">2024-07-30</time>发表</span><span class="level-item"><time dateTime="2024-07-30T14:55:50.823Z" title="2024/7/30 22:55:50">2024-07-30</time>更新</span><span class="level-item">1 分钟读完 (大约222个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/07/30/SpringCloud/">SpringCloud</a></p><div class="content"><h2 id="SpringCloud"><a href="#SpringCloud" class="headerlink" title="SpringCloud"></a>SpringCloud</h2><p>[TOC]</p>
+  </script><!-- hexo injector head_end end --></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/StarLogo.svg" alt="Hello, NilEra :-)" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">目录</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="/me">我</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/NilEra-K"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-07-30T14:55:47.000Z" title="2024/7/30 22:55:47">2024-07-30</time>发表</span><span class="level-item"><time dateTime="2024-07-31T09:22:55.139Z" title="2024/7/31 17:22:55">2024-07-31</time>更新</span><span class="level-item">30 分钟读完 (大约4524个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/07/30/MyBatisPlus/">MyBatisPlus</a></p><div class="content"><h2 id="🐦MyBatis-Plus"><a href="#🐦MyBatis-Plus" class="headerlink" title="🐦MyBatis-Plus"></a>🐦MyBatis-Plus</h2><p>[TOC]</p>
+<h3 id="🚪-1-快速入门"><a href="#🚪-1-快速入门" class="headerlink" title="🚪 1. 快速入门"></a>🚪 1. 快速入门</h3><h4 id="1-1-入门案例"><a href="#1-1-入门案例" class="headerlink" title="1.1 入门案例"></a>1.1 入门案例</h4><p>入门案例：基于课前资料提供的项目，实现下列功能:</p>
+<ul>
+<li>新增用户功能</li>
+<li>根据 <code>id</code> 查询用户</li>
+<li>根据 <code>id</code> 批量查询用户</li>
+<li>根据 <code>id</code> 更新用户</li>
+<li>根据 <code>id</code> 删除用户</li>
+</ul>
+<h5 id="1-1-1-引入-MyBatis-Plus-的依赖"><a href="#1-1-1-引入-MyBatis-Plus-的依赖" class="headerlink" title="1.1.1 引入 MyBatis-Plus 的依赖"></a>1.1.1 引入 <code>MyBatis-Plus</code> 的依赖</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- MyBatisPlus --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.3.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="1-1-2-定义-Mapper"><a href="#1-1-2-定义-Mapper" class="headerlink" title="1.1.2 定义 Mapper"></a>1.1.2 定义 <code>Mapper</code></h5><p>自定义的 <code>Mapper</code> 继承 <code>MybatisPlus</code>提供的 <code>BaseMapper</code> 接口。</p>
+<p><code>BaseMapper&lt;T&gt;</code> 给我们提供了很多基础方法，如常用的增、删、改、查等操作。</p>
+<p><img src="/./MyBatisPlus/BaseMapperInterface.png" alt="BaseMapperInterface"> </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">UserMapper</span> <span class="keyword">extends</span> <span class="title class_">BaseMapper</span>&lt;User&gt; &#123; &#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-1-3-直接使用"><a href="#1-1-3-直接使用" class="headerlink" title="1.1.3 直接使用"></a>1.1.3 直接使用</h5><p>做完上面两步操作，此时我们不需要再编写复杂的 <code>SQL</code> 语句即可对数据库进行增、删、改、查操作。</p>
+<p>当然对于原有 <code>MyBatis</code> 操作，我们也可以直接使用，因为 <code>MyBatis-Plus</code> 对 <code>MyBatis</code> 是非侵入的，体现了其<strong>润物无声</strong>的特点。</p>
+<h4 id="1-2-常见注解"><a href="#1-2-常见注解" class="headerlink" title="1.2 常见注解"></a>1.2 常见注解</h4><p>在初次使用 <code>MyBatis-Plus</code> 时，我们并没有指定要执行操作的表信息和字段信息，那么 <code>Mybatis-Plus</code> 是如何知道我们要查询的是哪张表？表中有哪些字段呢？</p>
+<p><code>MyBatisPlus</code> 通过扫描实体类，并基于<strong>反射</strong>获取实体类信息作为数据库表信息。</p>
+<p>在入门案例中 <code>1.1.2</code> 定义 <code>Mapper</code> 时，我们需要特别指定泛型类即 <code>&lt;User&gt;</code>。泛型中的 <code>User</code> 就是与数据库对应的 PO。</p>
+<p><code>MyBatis-Plus</code> 就是根据 PO 实体的信息来推断出表的信息，从而生成 <code>SQL</code> 的。默认情况下：</p>
+<ul>
+<li><code>MyBatis-Plus</code> 会把 PO 实体的类名驼峰转下划线作为表名，如类名为 <code>UserInfo</code>，反射的表名为 <code>user_info</code>；</li>
+<li><code>MyBatis-Plus</code> 会把 PO 实体的所有变量名驼峰转下划线作为表的字段名，并根据变量类型推断字段类型；</li>
+<li><code>MyBatis-Plus</code> 会把名为 <code>id</code> 的字段作为主键。</li>
+</ul>
+<p>但很多情况下，默认的实现与实际场景不符，因此 <code>MyBatis-Plus</code> 提供了一些注解便于我们声明表信息。</p>
+<h5 id="1-2-1-TableName-注解"><a href="#1-2-1-TableName-注解" class="headerlink" title="1.2.1 @TableName 注解"></a>1.2.1 <code>@TableName</code> 注解</h5><ul>
+<li>描述：表名注解，标识实体类对应的表</li>
+<li>使用位置：实体类</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 标注实体类对应的表名 */</span></span><br><span class="line"><span class="meta">@TableName(&quot;t_user&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>@TableName</code> 注解除了指定表名以外，还可以指定很多其它属性：</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>必须指定</strong></th>
+<th><strong>默认值</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>value</td>
+<td>String</td>
+<td>否</td>
+<td>“”</td>
+<td>表名</td>
+</tr>
+<tr>
+<td>schema</td>
+<td>String</td>
+<td>否</td>
+<td>“”</td>
+<td>schema</td>
+</tr>
+<tr>
+<td>keepGlobalPrefix</td>
+<td>boolean</td>
+<td>否</td>
+<td>false</td>
+<td>是否保持使用全局的 tablePrefix 的值（当全局 tablePrefix 生效时）</td>
+</tr>
+<tr>
+<td>resultMap</td>
+<td>String</td>
+<td>否</td>
+<td>“”</td>
+<td>xml 中 resultMap 的 id（用于满足特定类型的实体类对象绑定）</td>
+</tr>
+<tr>
+<td>autoResultMap</td>
+<td>boolean</td>
+<td>否</td>
+<td>false</td>
+<td>是否自动构建 resultMap 并使用（如果设置 resultMap 则不会进行 resultMap 的自动构建与注入）</td>
+</tr>
+<tr>
+<td>excludeProperty</td>
+<td>String[]</td>
+<td>否</td>
+<td>{}</td>
+<td>需要排除的属性名 @since 3.3.1</td>
+</tr>
+</tbody></table>
+<h5 id="1-2-2-TableId-注解"><a href="#1-2-2-TableId-注解" class="headerlink" title="1.2.2 @TableId 注解"></a>1.2.2 <code>@TableId</code> 注解</h5><ul>
+<li>描述：主键注解，标识实体类中的主键字段</li>
+<li>使用位置：实体类的主键字段</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@TableName(&quot;t_user&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="meta">@TableId(value=&quot;id&quot;, type=IdType.AUTO)</span></span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>TableId</code> 注解支持两个属性：</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>属性</strong></th>
+<th align="left"><strong>类型</strong></th>
+<th align="left"><strong>必须指定</strong></th>
+<th align="left"><strong>默认值</strong></th>
+<th align="left"><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>value</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">否</td>
+<td align="left">“”</td>
+<td align="left">表名</td>
+</tr>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><code>Enum</code></td>
+<td align="left">否</td>
+<td align="left"><code>IdType.NONE</code></td>
+<td align="left">指定主键类型</td>
+</tr>
+</tbody></table>
+<p><code>IdType</code>支持的类型有：</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>值</strong></th>
+<th align="left"><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>AUTO</code></td>
+<td align="left">数据库 <code>ID</code> 自增</td>
+</tr>
+<tr>
+<td align="left"><code>NONE</code></td>
+<td align="left">无状态，该类型为未设置主键类型（注解里等于跟随全局，全局里约等于 <code>INPUT</code>）</td>
+</tr>
+<tr>
+<td align="left"><code>INPUT</code></td>
+<td align="left"><code>insert</code> 前自行 <code>set</code> 主键值</td>
+</tr>
+<tr>
+<td align="left"><code>ASSIGN_ID</code></td>
+<td align="left">分配 <code>ID</code>（主键类型为 <code>Number</code>（<code>Long</code> 和 <code>Integer</code>）或（<code>String</code>）<em>（since 3.3.0）</em>，使用接口<code>IdentifierGenerator</code> 的方法 <code>nextId</code> （默认实现类为 <code>DefaultIdentifierGenerator</code> 雪花算法）</td>
+</tr>
+<tr>
+<td align="left"><code>ASSIGN_UUID</code></td>
+<td align="left">分配 <code>UUID</code>，主键类型为 <code>String</code>*(since 3.3.0)*，使用接口 <code>IdentifierGenerator</code> 的方法 <code>nextUUID</code>（默认 <code>default</code> 方法）</td>
+</tr>
+<tr>
+<td align="left"><code>ID_WORKER</code></td>
+<td align="left">分布式全局唯一 ID 长整型类型(please use ASSIGN_ID)</td>
+</tr>
+<tr>
+<td align="left"><code>UUID</code></td>
+<td align="left"><code>32</code> 位 <code>UUID</code> 字符串（please use ASSIGN_UUID）</td>
+</tr>
+<tr>
+<td align="left"><code>ID_WORKER_STR</code></td>
+<td align="left">分布式全局唯一 ID 字符串类型(please use ASSIGN_ID)</td>
+</tr>
+</tbody></table>
+<p>这里比较常见的有三种：</p>
+<ul>
+<li><code>AUTO</code>：利用数据库的 <code>id</code> 自增长</li>
+<li><code>INPUT</code>：手动生成 <code>id</code></li>
+<li><code>ASSIGN_ID</code>：雪花算法生成 <code>Long</code> 类型的全局唯一 <code>id</code>，这是默认的ID策略</li>
+</ul>
+<h5 id="1-2-3-TableField-注解"><a href="#1-2-3-TableField-注解" class="headerlink" title="1.2.3 @TableField 注解"></a>1.2.3 <code>@TableField</code> 注解</h5><ul>
+<li><p>描述：普通字段注解</p>
+</li>
+<li><p>示例：</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@TableName(&quot;user&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="meta">@TableId(value=&quot;u_id&quot;, type=IdType.AUTO)</span></span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@TableField(&quot;username&quot;)</span>		<span class="comment">// 成员变量名与数据库字段名不一致</span></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@TableField(&quot;isMarried&quot;)</span>	<span class="comment">// 成员变量是以 `isXXX` 命名</span></span><br><span class="line">    <span class="keyword">private</span> Boolean isMarried;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@TableField(&quot;`concat`&quot;)</span>		<span class="comment">// 成员变量名与数据库一致, 但是与数据库的关键字冲突</span></span><br><span class="line">    <span class="keyword">private</span> String concat;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@TableField(exist = false)</span>	<span class="comment">// 成员变量不是数据库字段</span></span><br><span class="line">    <span class="keyword">private</span> String address;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一般情况下我们并不需要给字段添加 <code>@TableField</code> 注解，一些特殊情况除外：</p>
+<ul>
+<li>成员变量名与数据库字段名不一致；</li>
+<li>成员变量是以 <code>isXXX</code> 命名，按照<code>JavaBean</code>的规范，<code>MyBatis-Plus</code>识别字段时会把 <code>is</code> 去除，这就导致与数据库不符；</li>
+<li>成员变量名与数据库一致，但是与数据库的关键字冲突。使用 <code>@TableField</code> 注解给字段名添加转义字符：<code>``</code>；</li>
+<li>成员变量不是数据库字段，添加 <code>exist = false</code></li>
+</ul>
+<p>支持的其它属性如下：</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>必填</strong></th>
+<th><strong>默认值</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>value</code></td>
+<td><code>String</code></td>
+<td>否</td>
+<td>“”</td>
+<td>数据库字段名</td>
+</tr>
+<tr>
+<td><code>exist</code></td>
+<td><code>boolean</code></td>
+<td>否</td>
+<td><code>true</code></td>
+<td>是否为数据库表字段</td>
+</tr>
+<tr>
+<td><code>condition</code></td>
+<td><code>String</code></td>
+<td>否</td>
+<td>“”</td>
+<td>字段 where 实体查询比较条件，有值设置则按设置的值为准，没有则为默认全局的 <code>%s=#&#123;%s&#125;</code>，<a target="_blank" rel="noopener" href="https://github.com/baomidou/mybatis-plus/blob/3.0/mybatis-plus-annotation/src/main/java/com/baomidou/mybatisplus/annotation/SqlCondition.java">参考(opens new window)</a></td>
+</tr>
+<tr>
+<td><code>update</code></td>
+<td><code>String</code></td>
+<td>否</td>
+<td>“”</td>
+<td>字段 update set 部分注入，例如：当在version字段上注解<code>update=&quot;%s+1&quot;</code> 表示更新时会 set version&#x3D;version+1 （该属性优先级高于 el 属性）</td>
+</tr>
+<tr>
+<td><code>insertStrategy</code></td>
+<td><code>Enum</code></td>
+<td>否</td>
+<td><code>FieldStrategy.DEFAULT</code></td>
+<td>举例：<code>NOT_NULL insert into table_a(&lt;if test=&quot;columnProperty != null&quot;&gt;column&lt;/if&gt;) values (&lt;if test=&quot;columnProperty != null&quot;&gt;#&#123;columnProperty&#125;&lt;/if&gt;)</code></td>
+</tr>
+<tr>
+<td><code>updateStrategy</code></td>
+<td><code>Enum</code></td>
+<td>否</td>
+<td><code>FieldStrategy.DEFAULT</code></td>
+<td>举例：IGNORED update table_a set column&#x3D;#{columnProperty}</td>
+</tr>
+<tr>
+<td><code>whereStrategy</code></td>
+<td><code>Enum</code></td>
+<td>否</td>
+<td><code>FieldStrategy.DEFAULT</code></td>
+<td>举例：<code>NOT_EMPTY where &lt;if test=&quot;columnProperty != null and columnProperty!=&#39;&#39;&quot;&gt;column=#&#123;columnProperty&#125;&lt;/if&gt;</code></td>
+</tr>
+<tr>
+<td><code>fill</code></td>
+<td><code>Enum</code></td>
+<td>否</td>
+<td><code>FieldFill.DEFAULT</code></td>
+<td>字段自动填充策略</td>
+</tr>
+<tr>
+<td><code>select</code></td>
+<td><code>boolean</code></td>
+<td>否</td>
+<td><code>true</code></td>
+<td>是否进行 <code>SELECT</code> 查询</td>
+</tr>
+<tr>
+<td><code>keepGlobalFormat</code></td>
+<td><code>boolean</code></td>
+<td>否</td>
+<td><code>false</code></td>
+<td>是否保持使用全局的 format 进行处理</td>
+</tr>
+<tr>
+<td><code>jdbcType</code></td>
+<td><code>JdbcType</code></td>
+<td>否</td>
+<td><code>JdbcType.UNDEFINED</code></td>
+<td>JDBC 类型 (该默认值不代表会按照该值生效)</td>
+</tr>
+<tr>
+<td><code>typeHandler</code></td>
+<td><code>TypeHander</code></td>
+<td>否</td>
+<td></td>
+<td>类型处理器 (该默认值不代表会按照该值生效)</td>
+</tr>
+<tr>
+<td><code>numericScale</code></td>
+<td><code>String</code></td>
+<td>否</td>
+<td>“”</td>
+<td>指定小数点后保留的位数</td>
+</tr>
+</tbody></table>
+<h4 id="1-3-常见配置"><a href="#1-3-常见配置" class="headerlink" title="1.3 常见配置"></a>1.3 常见配置</h4><p><code>MyBatis-Plus</code> 也支持基于 <code>yaml</code> 文件的自定义配置，详见官方文档：</p>
+<p><a target="_blank" rel="noopener" href="https://www.baomidou.com/pages/56bac0/#%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE">MyBatis-Plus 官方文档</a></p>
+<p>大多数的配置都有默认值，因此我们都无需配置。但还有一些是没有默认值的，例如:</p>
+<ul>
+<li>实体类的别名扫描包</li>
+<li>全局id类型</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mybatis-plus:</span></span><br><span class="line">	<span class="attr">type-aliases-package:</span> <span class="string">com.itheima.mp.domain.po</span>		<span class="comment"># 别名扫描包</span></span><br><span class="line">	<span class="attr">mapper-locations:</span> <span class="string">&quot;classpath*:/mapper/**/*.xml&quot;</span> 	<span class="comment"># Mapper.xml文件地址，当前这个是默认值。</span></span><br><span class="line">	<span class="attr">configuration:</span></span><br><span class="line">  		<span class="attr">mapper-underscore-to-camel-case:</span> <span class="literal">true</span>			<span class="comment"># 是否开启下划线驼峰映射</span></span><br><span class="line">		<span class="attr">cache-enabled:</span> <span class="literal">false</span>							<span class="comment"># 是否开启二级缓存</span></span><br><span class="line">	<span class="attr">global-config:</span></span><br><span class="line">		<span class="attr">db-config:</span></span><br><span class="line">		<span class="attr">id-type:</span> <span class="string">auto</span> 									<span class="comment"># 全局 id 类型为自增长, 可以更换为其他方法, 如 assign_id</span></span><br><span class="line">		<span class="attr">update-strategy:</span> <span class="string">not_null</span>						<span class="comment"># 更新策略: 只更新非空字段</span></span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，<code>MyBatis-Plus</code>也支持手写 <code>SQL</code> 的，而 <code>mapper</code> 文件的读取地址可以通过 <code>mapper-locations</code> 配置：默认值是<code>classpath*:/mapper/**/*.xml</code>，也就是说我们只要把 <code>mapper.xml</code> 文件放置这个目录下就一定会被加载。</p>
+<h3 id="🥑-2-核心功能"><a href="#🥑-2-核心功能" class="headerlink" title="🥑 2. 核心功能"></a>🥑 2. 核心功能</h3><p>入门案例中都是以 <code>id</code> 为条件的简单CRUD，一些复杂条件的 <code>SQL</code> 语句就要用到一些更高级的功能了。</p>
+<h4 id="2-1-条件构造器"><a href="#2-1-条件构造器" class="headerlink" title="2.1 条件构造器"></a>2.1 条件构造器</h4><p>除了新增以外，修改、删除、查询的 <code>SQL</code> 语句都需要指定 <code>WHERE</code> 条件。因此 <code>BaseMapper</code> 中提供的相关方法除了以 <code>id</code> 作为 <code>WHERE</code> 条件以外，还支持更加复杂的 <code>WHERE</code>条件。</p>
+<p><img src="https://b11et3un53m.feishu.cn/space/api/box/stream/download/asynccode/?code=YWQ1ZTMzMTg4ZTRiNzFkYzFiNzc2YmU0N2I4OGJiZWFfS1F3dFZqVDU1TzVNSnB1VmJWS0MxNjVCVU1qYklzVGdfVG9rZW46QXlTUGJCVVVTb25wa3p4Y0x6SGNLTlhwblVjXzE3MjIzOTQwODg6MTcyMjM5NzY4OF9WNA" alt="img"></p>
+<p>参数中的 <code>Wrapper</code> 就是<strong>条件构造</strong>的抽象类，其下有很多默认实现，继承关系如图：</p>
+<p><img src="https://b11et3un53m.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2EwYmQzMWFjZTEzMmNkOTI4MDIyYzM1ZjExOWZlYTRfMW5nN1UxV3NrMHQxWHhWOHlPYWRZNmtJdGFTbmpBeVJfVG9rZW46WjFUU2JGUk1ubzZWaWp4Q1BDbmN6MmdEbjNlXzE3MjIzOTQwODg6MTcyMjM5NzY4OF9WNA" alt="img"></p>
+<p><code>Wrapper</code> 的子类 <code>AbstractWrapper</code> 提供了 <code>WHERE</code> 中包含的所有条件构造方法：</p>
+<img src="https://b11et3un53m.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWRhOWZiYzNkODcyZjllYTk2Y2VmMmQyM2Q0ZmQzYTdfWkFMRXJSNmZyQ1dQQk1yY2h1Ujd3OHJpTHBNT2ZLUllfVG9rZW46RXlZeWJzZnBBb0FaVnF4V2p5YmNXSzNlbmFmXzE3MjIzOTQwODg6MTcyMjM5NzY4OF9WNA" alt="img" style="zoom: 67%;" />
+
+<p>而 <code>QueryWrapper</code> 在 <code>AbstractWrapper</code> 的基础上拓展了一个 <code>SELETE</code> 方法，<strong>允许指定查询字段：</strong></p>
+<p><img src="https://b11et3un53m.feishu.cn/space/api/box/stream/download/asynccode/?code=YjU1MzEzNDYyMjE2MjIwNGUyZDk0NGNlNzJjNDU1NzRfdGxxZHV1c3hXQkxvcExwWW82MUhNTzBtSm14NHRsWFdfVG9rZW46RVVzUmJwaERQbzJNNTN4WjBrSGNCMWhFbmpoXzE3MjIzOTQwODg6MTcyMjM5NzY4OF9WNA" alt="img"></p>
+<p>而 <code>UpdateWrapper</code> 在 <code>AbstractWrapper</code> 的基础上拓展了一个 <code>SET</code> 方法，<strong>允许指定 <code>SQL</code> 中的 <code>SET</code> 部分：</strong></p>
+<p><img src="https://b11et3un53m.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmI5OGUyOWU5ZWE4M2M1MWIwYjQ5MWZkOWQ0MDBkMWNfVk5xamtvSmNmV0VEUnFhcU9jSUU4a0s0SDhITkNDZ0ZfVG9rZW46TDZVRWJEZ1V5b0R4blZ4UW92SWNpYmEzbmRiXzE3MjIzOTQwODg6MTcyMjM5NzY4OF9WNA" alt="img"></p>
+<p>接下来，我们就来看看如何利用 <code>Wrapper</code> 实现复杂查询。</p>
+<h5 id="2-1-1-QueryWrapper"><a href="#2-1-1-QueryWrapper" class="headerlink" title="2.1.1 QueryWrapper"></a>2.1.1 QueryWrapper</h5><p>无论是修改、删除、查询，都可以使用QueryWrapper来构建查询条件。</p>
+<p>当前表的结构如下：</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>名称</th>
+<th>数据类型</th>
+<th>注释</th>
+<th>长度&#x2F;集合</th>
+<th>默认</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><code>id</code></td>
+<td><code>BIGINT</code></td>
+<td>用户ID</td>
+<td>19</td>
+<td>AUTO_INCREMENT</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>username</code></td>
+<td><code>VARCHAR</code></td>
+<td>用户名</td>
+<td>50</td>
+<td>无默认值</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>password</code></td>
+<td><code>VARCHAR</code></td>
+<td>密码</td>
+<td>128</td>
+<td>无默认值</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>phone</code></td>
+<td><code>VARCHAR</code></td>
+<td>注册手机号</td>
+<td>20</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>info</code></td>
+<td><code>JSON</code></td>
+<td>详细信息</td>
+<td></td>
+<td>无默认值</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>status</code></td>
+<td><code>INT</code></td>
+<td>使用状态(1: 正常 2: 冻结)</td>
+<td>10</td>
+<td>“1”</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>balance</code></td>
+<td><code>INT</code></td>
+<td>账户余额</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>create_time</code></td>
+<td><code>DATETIME</code></td>
+<td>创建时间</td>
+<td></td>
+<td>CURRENT_TIMESTAMP</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>update_time</code></td>
+<td><code>DATETIME</code></td>
+<td>更新时间</td>
+<td></td>
+<td>CURRENT_TIMESTAMP</td>
+</tr>
+</tbody></table>
+<p>接下来看一些例子： </p>
+<p><strong>查询</strong>：查询出名字中带<code>o</code>的，存款大于等于1000元的人。代码如下：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> id,username,info,balance</span><br><span class="line"><span class="keyword">FROM</span> <span class="keyword">user</span></span><br><span class="line"><span class="keyword">WHERE</span> username <span class="keyword">LIKE</span> &quot;%o%&quot; <span class="keyword">AND</span> Balance <span class="operator">&gt;=</span> <span class="number">100</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">testQueryWrapper</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 1. 构建查询条件 WHERE name LIKE &quot;%o%&quot; AND balance &gt;= 1000</span></span><br><span class="line">    QueryWrapper&lt;User&gt; wrapper = <span class="keyword">new</span> <span class="title class_">QueryWrapper</span>&lt;User&gt;()</span><br><span class="line">            .select(<span class="string">&quot;id&quot;</span>, <span class="string">&quot;username&quot;</span>, <span class="string">&quot;info&quot;</span>, <span class="string">&quot;balance&quot;</span>)</span><br><span class="line">            .like(<span class="string">&quot;username&quot;</span>, <span class="string">&quot;o&quot;</span>)</span><br><span class="line">            .ge(<span class="string">&quot;balance&quot;</span>, <span class="number">1000</span>);</span><br><span class="line">    <span class="comment">// 2. 查询数据</span></span><br><span class="line">    List&lt;User&gt; users = userMapper.selectList(wrapper);</span><br><span class="line">    users.forEach(System.out::println);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>更新</strong>：更新用户名为 <code>Jack</code> 的用户的余额为 <code>2000</code>，代码如下：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> <span class="keyword">user</span></span><br><span class="line">	<span class="keyword">SET</span> balance<span class="operator">=</span><span class="number">2000</span></span><br><span class="line">	<span class="keyword">WHERE</span> (username<span class="operator">=</span>&quot;Jack&quot;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">testUpdateByQueryWrapper</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 1.构建查询条件 WHERE name=&quot;Jack&quot;</span></span><br><span class="line">    QueryWrapper&lt;User&gt; wrapper = <span class="keyword">new</span> <span class="title class_">QueryWrapper</span>&lt;User&gt;().eq(<span class="string">&quot;username&quot;</span>, <span class="string">&quot;Jack&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 2.更新数据, user 中非 NULL 字段都会作为 SET 语句</span></span><br><span class="line">    <span class="type">User</span> <span class="variable">user</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">User</span>();</span><br><span class="line">    user.setBalance(<span class="number">2000</span>);</span><br><span class="line">    userMapper.update(user, wrapper);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-1-2-UpdateWrapper"><a href="#2-1-2-UpdateWrapper" class="headerlink" title="2.1.2 UpdateWrapper"></a>2.1.2 UpdateWrapper</h5><p>基于 <code>BaseMapper</code> 中的 <code>UPDATE</code> 方法更新时只能直接赋值，对于一些复杂的需求就难以实现。 </p>
+<p>例如：更新 <code>id</code> 为 <code>1</code>、<code>2</code>、<code>4</code> 的用户的余额，扣 <code>200</code>，对应的SQL应该是：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE user <span class="type">SET</span> <span class="variable">balance</span> <span class="operator">=</span> balance - <span class="number">200</span> WHERE id <span class="title function_">in</span> <span class="params">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>)</span></span><br></pre></td></tr></table></figure>
+
+<p><code>SET</code> 的赋值结果是基于字段现有值的，这个时候就要利用 <code>UpdateWrapper</code> 中的 <code>setSql</code> 功能了：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">testUpdateWrapper</span><span class="params">()</span> &#123;</span><br><span class="line">    List&lt;Long&gt; ids = List.of(<span class="number">1L</span>, <span class="number">2L</span>, <span class="number">4L</span>);</span><br><span class="line">    <span class="comment">// 1.生成SQL</span></span><br><span class="line">    UpdateWrapper&lt;User&gt; wrapper = <span class="keyword">new</span> <span class="title class_">UpdateWrapper</span>&lt;User&gt;()</span><br><span class="line">            .setSql(<span class="string">&quot;balance = balance - 200&quot;</span>) 	<span class="comment">// SET balance = balance - 200</span></span><br><span class="line">            .in(<span class="string">&quot;id&quot;</span>, ids); 					<span class="comment">// WHERE id in (1, 2, 4)</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 2.更新, 注意第一个参数可以给null, 也就是不填更新字段和数据，</span></span><br><span class="line">    <span class="comment">// 而是基于 UpdateWrapper 中的 setSQL 来更新</span></span><br><span class="line">    userMapper.update(<span class="literal">null</span>, wrapper);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-1-3-LambdaQueryWrapper"><a href="#2-1-3-LambdaQueryWrapper" class="headerlink" title="2.1.3 LambdaQueryWrapper"></a>2.1.3 LambdaQueryWrapper</h5><p>无论是 <code>QueryWrapper</code> 还是 <code>UpdateWrapper</code> 在构造条件的时候都需要写死字段名称，会出现字符串<code>魔法值</code>。这在编程规范中显然是不推荐的。 那怎么样才能不写字段名，又能知道字段名呢？</p>
+<p>其中一种办法是基于变量的 <code>getter</code> 方法结合反射技术。因此我们只要将条件对应的字段的 <code>getter</code> 方法传递给 <code>MyBatis-Plus</code>，它就能计算出对应的变量名了。而传递方法可以使用 <code>JDK8</code> 中的 <code>方法引用</code> 和 <code>Lambda</code> 表达式。 因此 <code>MyBatis-Plus</code> 又提供了一套基于<code>Lambda</code> 的 <code>Wrapper</code>，包含两个：</p>
+<ul>
+<li><code>LambdaQueryWrapper</code></li>
+<li><code>LambdaUpdateWrapper</code></li>
+</ul>
+<p>分别对应 <code>QueryWrapper</code> 和 <code>UpdateWrapper</code></p>
+<p>其使用方式如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">testLambdaQueryWrapper</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 1.构建条件 WHERE username LIKE &quot;%o%&quot; AND balance &gt;= 1000</span></span><br><span class="line">    QueryWrapper&lt;User&gt; wrapper = <span class="keyword">new</span> <span class="title class_">QueryWrapper</span>&lt;&gt;();</span><br><span class="line">    wrapper.lambda()</span><br><span class="line">            .select(User::getId, User::getUsername, User::getInfo, User::getBalance)</span><br><span class="line">            .like(User::getUsername, <span class="string">&quot;o&quot;</span>)</span><br><span class="line">            .ge(User::getBalance, <span class="number">1000</span>);</span><br><span class="line">    <span class="comment">// 2.查询</span></span><br><span class="line">    List&lt;User&gt; users = userMapper.selectList(wrapper);</span><br><span class="line">    users.forEach(System.out::println);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-自定义-SQL"><a href="#2-2-自定义-SQL" class="headerlink" title="2.2 自定义 SQL"></a>2.2 自定义 SQL</h4><p>一般企业的开发规范中，是不允许开发人员将 <code>SQL</code> 脱离出 <code>Mapper</code> 层或者 <code>mapper.xml</code> 文件的，但是我们想要使用 <code>MyBatis-Plus</code> 又想要遵守企业的开发规范，应该如何做呢？</p>
+<p>我们可以利用 <code>MyBatis-Plus</code> 的 <code>Wrapper</code> 来构建复杂的 <code>WHERE</code> 条件，然后自己定义 <code>SQL</code> 语句中剩下的部分。</p>
+<p>① 基于 <code>Wrapper</code> 构造 <code>WHERE</code> 条件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Long&gt; ids = List.of(<span class="number">1L</span>, <span class="number">2L</span>, <span class="number">4L</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">amount</span> <span class="operator">=</span> <span class="number">200</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 1. 构造条件</span></span><br><span class="line">LambdaQueryWrapper&lt;User&gt; wrapper = <span class="keyword">new</span> <span class="title class_">LambdaQueryWrapper</span>&lt;User&gt;().in(User::getId, ids);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 自定义SQL方法调用</span></span><br><span class="line">userMapper.updateBalanceByIds(wrapper, amount);</span><br></pre></td></tr></table></figure>
+
+<p>② 在 <code>mapper</code> 方法参数中用 <code>@Param</code> 注解声明 <code>Wrapper</code> 变量名称，这个名称必须是 <code>ew</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">updateBalanceByIds</span><span class="params">(<span class="meta">@Param(&quot;ew&quot;)</span> LambdaQueryWrapper&lt;User&gt; wrapper, <span class="meta">@Param(&quot;amount&quot;)</span> <span class="type">int</span> amount)</span>;</span><br></pre></td></tr></table></figure>
+
+<p>③ 自定义 <code>SQL</code>，并使用 <code>Wrapper</code> 条件，这里 <code>ew.customSqlSegment</code> 是 <code>Wrapper</code> 的一个方法，用于获取用户自定义SQL片段。如果使用出现问题，参考博客：<a target="_blank" rel="noopener" href="https://blog.csdn.net/xxNGchi/article/details/120681606">MyBatis-Plus ${ew.customSqlSegment} 使用的史诗级大坑-CSDN博客</a></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">update</span> <span class="attr">id</span>=<span class="string">&quot;updateBalanceByIds&quot;</span>&gt;</span></span><br><span class="line">    UPDATE t_user SET balance = balance - #&#123;amount&#125; $&#123;ew.customSqlSegment&#125;;</span><br><span class="line"><span class="tag">&lt;/<span class="name">update</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-3-Service-接口"><a href="#2-3-Service-接口" class="headerlink" title="2.3 Service 接口"></a>2.3 <code>Service</code> 接口</h4><p><code>MyBatis-Plus</code> 不仅提供了 <code>BaseMapper</code>，还提供了通用的 <code>Service</code> 接口及默认实现，封装了一些常用的 <code>service</code> 模板方法。 通用接口为 <code>IService</code>，默认实现为 <code>ServiceImpl</code>，其中封装的方法可以分为以下几类：</p>
+<ul>
+<li><code>save</code>：新增</li>
+<li><code>remove</code>：删除</li>
+<li><code>update</code>：更新</li>
+<li><code>get</code>：查询单个结果</li>
+<li><code>list</code>：查询集合结果</li>
+<li><code>count</code>：计数</li>
+<li><code>page</code>：分页查询</li>
+</ul>
+<p><img src="/./MyBatisPlus/IServiceInterface.png" alt="IServiceInterface"></p>
+<h5 id="2-3-1-CRUD"><a href="#2-3-1-CRUD" class="headerlink" title="2.3.1 CRUD"></a>2.3.1 CRUD</h5><p>首先了解基本的CRUD接口。</p>
+<p><strong>新增</strong>：</p>
+<img src="./MyBatisPlus/IServiceSave.png" alt="" style="zoom: 50%;" />
+
+<ul>
+<li><code>save</code> 是新增单个元素</li>
+<li><code>saveBatch</code> 是批量新增</li>
+<li><code>saveOrUpdate</code> 是根据id判断，如果数据存在就更新，不存在则新增</li>
+<li><code>saveOrUpdateBatch</code> 是批量的新增或修改</li>
+</ul>
+<p><strong>删除：</strong></p>
+<img src="./MyBatisPlus/IServiceRemove.png" alt="IServiceRemove" style="zoom: 80%;" />
+
+<ul>
+<li><code>removeById</code>：根据id删除</li>
+<li><code>removeByIds</code>：根据id批量删除</li>
+<li><code>removeByMap</code>：根据Map中的键值对为条件删除</li>
+<li><code>remove(Wrapper&lt;T&gt;)</code>：根据Wrapper条件删除</li>
+<li><code>~~removeBatchByIds~~</code>：暂不支持</li>
+</ul>
+<p><strong>修改：</strong></p>
+<p><img src="/./MyBatisPlus/IServiceUpdate.png" alt="IServiceUpdate"></p>
+<ul>
+<li><code>updateById</code>：根据id修改</li>
+<li><code>update(Wrapper&lt;T&gt;)</code>：根据<code>UpdateWrapper</code>修改，<code>Wrapper</code>中包含<code>set</code>和<code>where</code>部分</li>
+<li><code>update(T，Wrapper&lt;T&gt;)</code>：按照<code>T</code>内的数据修改与<code>Wrapper</code>匹配到的数据</li>
+<li><code>updateBatchById</code>：根据id批量修改</li>
+</ul>
+<p><strong>Get：</strong></p>
+<p><img src="/./MyBatisPlus/IServiceGet.png" alt="IServiceGet"></p>
+<ul>
+<li><code>getById</code>：根据 <code>id</code> 查询 <code>1</code> 条数据</li>
+<li><code>getOne(Wrapper&lt;T&gt;)</code>：根据<code>Wrapper</code> 查询 <code>1</code> 条数据</li>
+<li><code>getBaseMapper</code>：获取<code>Service</code> 内的 <code>BaseMapper</code> 实现，某些时候需要直接调用 <code>Mapper</code> 内的自定义 <code>SQL</code> 时可以用这个方法获取到 <code>Mapper</code></li>
+</ul>
+<p><strong>List：</strong></p>
+<p><img src="/./MyBatisPlus/IServiceList.png" alt="IServiceList"></p>
+<ul>
+<li><code>listByIds</code>：根据id批量查询</li>
+<li><code>list(Wrapper&lt;T&gt;)</code>：根据Wrapper条件查询多条数据</li>
+<li><code>list()</code>：查询所有</li>
+</ul>
+<p><strong>Count</strong>：</p>
+<p><img src="/./MyBatisPlus/IServiceCount.png" alt="IServiceCount"></p>
+<ul>
+<li><code>count()</code>：统计所有数量</li>
+<li><code>count(Wrapper&lt;T&gt;)</code>：统计符合<code>Wrapper</code>条件的数据数量</li>
+</ul>
+<p><strong>getBaseMapper</strong>： 当我们在service中要调用Mapper中自定义SQL时，就必须获取service对应的Mapper，就可以通过这个方法：</p>
+<p><img src="https://b11et3un53m.feishu.cn/space/api/box/stream/download/asynccode/?code=MGM1NDYyZmU0NjEyZmE1MTY1ZDBhZDM5NTMzNWQ1YjlfQ1pCTVFyWEt6cWV4bjdDSkE0NDFjazRrYWpSeUxTVTdfVG9rZW46TFdqc2JTMVUzb1JCdXh4MWhDMGMxMzdBbmpoXzE3MjI0MTI1ODk6MTcyMjQxNjE4OV9WNA" alt="img"></p>
+<h5 id="2-3-2-基本用法"><a href="#2-3-2-基本用法" class="headerlink" title="2.3.2 基本用法"></a>2.3.2 基本用法</h5><p>由于 <code>Service</code> 中经常需要定义与业务有关的自定义方法，因此我们不能直接使用 <code>IService</code>，而是自定义 <code>Service</code> 接口，然后继承 <code>IService</code> 以拓展方法。同时，让自定义的 <code>Service实现类</code> 继承 <code>ServiceImpl</code>，这样就不用自己实现 <code>IService</code> 中的接口了。</p>
+<p>具体方法如下：</p>
+<p>① 首先，定义 <code>IUserService</code> 类，继承 <code>IService</code>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.mp.service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.extension.service.IService;</span><br><span class="line"><span class="keyword">import</span> com.itheima.mp.domain.po.User;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">IUserService</span> <span class="keyword">extends</span> <span class="title class_">IService</span>&lt;User&gt; &#123;</span><br><span class="line">    <span class="comment">// 拓展自定义方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>② 然后，编写 <code>UserServiceImpl</code> 类，继承 <code>ServiceImpl</code>，实现 <code>UserService</code>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.mp.service.impl;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;</span><br><span class="line"><span class="keyword">import</span> com.itheima.mp.domain.po.User;</span><br><span class="line"><span class="keyword">import</span> com.itheima.mp.domain.po.service.IUserService;</span><br><span class="line"><span class="keyword">import</span> com.itheima.mp.mapper.UserMapper;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Service;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserServiceImpl</span> <span class="keyword">extends</span> <span class="title class_">ServiceImpl</span>&lt;UserMapper, User&gt; <span class="keyword">implements</span> <span class="title class_">IUserService</span> &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>项目结构如下：</p>
+<p><img src="https://b11et3un53m.feishu.cn/space/api/box/stream/download/asynccode/?code=MjZmNzNiNWRlZmQ1MzU1YjYyN2VmYzgzNmNiNTBiOGZfblhsa1NaS1NSbXFpUlByaWNDU1NrcGtmMWIyMXpndVRfVG9rZW46S1BYcGJkM3Y4b2pZVkt4ZHhFUmNmcHpPbnJnXzE3MjI0MDkzNTg6MTcyMjQxMjk1OF9WNA" alt="img"></p>
+<p>接下来，我们基于 <code>RESTful</code> 风格快速实现下面几个接口（<a target="_blank" rel="noopener" href="https://blog.csdn.net/SeniorShen/article/details/111591122">什么是<code>RESTful</code>风格</a>）：</p>
+<p>简单理解 <code>REST</code> 就是：<code>URL</code> 中只使用名词来定位资源，用 <code>HTTP</code> 协议里的动词（<code>GET</code>、<code>POST</code>、<code>PUT</code>、<code>DELETE</code>）来实现资源的增删改查操作。</p>
+<p>什么是 <code>RESTful</code>：</p>
+<ul>
+<li>使用客户&#x2F;服务器（B&#x2F;S、 C&#x2F;S）模型：客户和服务器之间通过一个统一的接口来互相通讯。</li>
+<li>层次化的系统：在一个 <code>REST</code> 系统中，客户端并不会固定地与一个服务器打交道。</li>
+<li>无状态：在一个 <code>REST</code> 系统中，服务端并不会保存有关客户的任何状态。也就是说，客户端自身负责用户状态的维持，并在每次发送请求时都需要提供足够的信息。</li>
+<li>可缓存：<code>REST</code> 系统需要能够恰当地缓存请求，以尽量减少服务端和客户端之间的信息传输，以提高性能。</li>
+<li>统一的接口。一个 <code>REST</code> 系统需要使用一个统一的接口来完成子系统之间以及服务与用户之间的交互。这使得 <code>REST</code> 系统中的各个子系统可以独自完成演化。</li>
+</ul>
+<p>如果一个系统满足了上面所列出的五条约束，那么该系统就被称为是 <code>RESTful</code> 的。</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>编号</strong></th>
+<th align="left"><strong>接口</strong></th>
+<th align="left"><strong>请求方式</strong></th>
+<th align="left"><strong>请求路径</strong></th>
+<th align="left"><strong>请求参数</strong></th>
+<th align="left"><strong>返回值</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">新增用户</td>
+<td align="left">POST</td>
+<td align="left">&#x2F;users</td>
+<td align="left">用户表单实体</td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">删除用户</td>
+<td align="left">DELETE</td>
+<td align="left">&#x2F;users&#x2F;{id}</td>
+<td align="left">用户 <code>id</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">根据 <code>id</code> 查询用户</td>
+<td align="left">GET</td>
+<td align="left">&#x2F;users&#x2F;{id}</td>
+<td align="left">用户 <code>id</code></td>
+<td align="left">用户VO</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">根据 <code>id</code> 批量查询</td>
+<td align="left">GET</td>
+<td align="left">&#x2F;users</td>
+<td align="left">用户 <code>id</code> 集合</td>
+<td align="left">用户VO集合</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">根据 <code>id</code> 扣除余额</td>
+<td align="left">PUT</td>
+<td align="left">&#x2F;users&#x2F;{id}&#x2F;deduction&#x2F;{money}</td>
+<td align="left">1. 用户 <code>id</code><br />2. 扣除金额</td>
+<td align="left">无</td>
+</tr>
+</tbody></table>
+<h3 id="🕸-3-拓展功能"><a href="#🕸-3-拓展功能" class="headerlink" title="🕸 3. 拓展功能"></a>🕸 3. 拓展功能</h3><h3 id="🧩-4-插件功能"><a href="#🧩-4-插件功能" class="headerlink" title="🧩 4. 插件功能"></a>🧩 4. 插件功能</h3></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-07-30T14:36:18.000Z" title="2024/7/30 22:36:18">2024-07-30</time>发表</span><span class="level-item"><time dateTime="2024-07-30T14:55:50.823Z" title="2024/7/30 22:55:50">2024-07-30</time>更新</span><span class="level-item">1 分钟读完 (大约222个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/07/30/SpringCloud/">SpringCloud</a></p><div class="content"><h2 id="SpringCloud"><a href="#SpringCloud" class="headerlink" title="SpringCloud"></a>SpringCloud</h2><p>[TOC]</p>
 <h3 id="1-微服务"><a href="#1-微服务" class="headerlink" title="1. 微服务"></a>1. 微服务</h3><p><strong>什么是微服务：</strong>微服务是一种软件架构风格，它是以专注于单一职责的很多小型项目为基础，组合出复杂的大型应用。</p>
 <p>传统的<strong>单体项目</strong>开发将一个项目的所有模块都集中在这个项目中。而<strong>微服务</strong>可以理解为对一个<strong>单体项目</strong>的拆分，将单体项目的边界打破，并且将一个庞大的项目拆分成一个一个小项目。</p>
 <p>当然微服务会涉及到一些问题，主要包括下面这些方面：</p>
@@ -1908,80 +2475,7 @@
 <p>④ 从输入中选择部分元素的算子，如 <code>filter</code>、<code>distinct</code>、<code>substract</code>、<code>sample</code></p>
 </li>
 </ol>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-06-11T08:03:22.000Z" title="2024/6/11 16:03:22">2024-06-11</time>发表</span><span class="level-item"><time dateTime="2024-06-30T09:09:47.615Z" title="2024/6/30 17:09:47">2024-06-30</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/">大数据技术</a><span> / </span><a class="link-muted" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/%E9%A1%B9%E7%9B%AE/">项目</a></span><span class="level-item">1 小时读完 (大约10206个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2024/06/11/OnlineTravelBigdataPlatform/">OnlineTravelBigdataPlatform</a></p><div class="content"><h2 id="🌳-在线旅游大数据平台项目"><a href="#🌳-在线旅游大数据平台项目" class="headerlink" title="🌳 在线旅游大数据平台项目"></a>🌳 在线旅游大数据平台项目</h2><p>
-    <label for="file">完成度：</label>
-    <progress max="100" value="100"> 100% </progress>
-</p>
-
-
-<p><strong>日期任务清单</strong></p>
-<ul>
-<li><p><input checked="" disabled="" type="checkbox"> 
-项目开始日期: 2024-06-11</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 了解项目的背景以及整个系统的架构</li>
-<li><input checked="" disabled="" type="checkbox"> 了解系统需要完成的主要功能</li>
-<li><input checked="" disabled="" type="checkbox"> 了解系统整个架构</li>
-<li><input checked="" disabled="" type="checkbox"> 完成数据服务端的部署</li>
-<li><input checked="" disabled="" type="checkbox"> 完成数据客户端的部署</li>
-<li><input checked="" disabled="" type="checkbox"> 了解数据集</li>
-<li><input checked="" disabled="" type="checkbox"> 认识消息队列 Kafka</li>
-<li><input checked="" disabled="" type="checkbox"> 完成消息队列 Kafka 的部署</li>
-<li><input checked="" disabled="" type="checkbox"> 了解消息队列 Kafka 的基本应用</li>
-<li><input checked="" disabled="" type="checkbox"> 使用 Flume 收集数据到 Kafka</li>
-</ul>
-</li>
-<li><p><input checked="" disabled="" type="checkbox"> 
-2024-06-12</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 了解实时数据分析所用到的技术</li>
-<li><input checked="" disabled="" type="checkbox"> 了解 <code>SparkStreaming</code> 和 <code>Flink</code></li>
-<li><input checked="" disabled="" type="checkbox"> 了解 <code>SparkStreaming</code> 的核心概念</li>
-<li><input checked="" disabled="" type="checkbox"> 了解数据源</li>
-<li><input checked="" disabled="" type="checkbox"> 借助<code>netcat</code>实践<code>Kafka</code></li>
-<li><input checked="" disabled="" type="checkbox"> 了解转换操作</li>
-<li><input checked="" disabled="" type="checkbox"> 具体实施任务：处理数据</li>
-</ul>
-</li>
-<li><p><input checked="" disabled="" type="checkbox"> 
-2024-06-13 </p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 了解数据库连接池</li>
-<li><input checked="" disabled="" type="checkbox"> 了解如何向 MySQL 数据库中写入数据</li>
-<li><input checked="" disabled="" type="checkbox"> 借助 <code>alibaba Druid</code> 库实现一个数据库连接工具类 </li>
-<li><input checked="" disabled="" type="checkbox"> 编写案例：<code>WordCount</code></li>
-<li><input checked="" disabled="" type="checkbox"> 具体实施任务，将代码中生成的数据写入<code>MySQL</code>。</li>
-</ul>
-</li>
-<li><p><input checked="" disabled="" type="checkbox"> 
-2024-06-14</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 了解什么是 Kafka Offset</li>
-<li><input checked="" disabled="" type="checkbox"> 维护 Kafka Offset</li>
-<li><input checked="" disabled="" type="checkbox"> 具体实施任务，将 Kafka 的 Offset 配合 <code>MySQL</code> 用代码进行维护。</li>
-</ul>
-</li>
-<li><p><input checked="" disabled="" type="checkbox"> 
-2024-06-17</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 进行后端开发</li>
-<li><input checked="" disabled="" type="checkbox"> 进行前端开发</li>
-</ul>
-</li>
-<li><p><input checked="" disabled="" type="checkbox"> 
-2024-06-18</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 进行热力图的绘制</li>
-<li><input checked="" disabled="" type="checkbox"> 进行人流量柱状图的绘制</li>
-<li><input checked="" disabled="" type="checkbox"> 进行人流量趋势图的绘制</li>
-</ul>
-</li>
-<li><p><input checked="" disabled="" type="checkbox"> 
-2024-06-19 项目结束日期</p>
-</li>
-</ul>
-<p><strong>文件目录</strong></p>
-<p>[TOC]</p></div><a class="article-more button is-small is-size-7" href="/2024/06/11/OnlineTravelBigdataPlatform/#more">阅读更多</a></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/">上一页</a></div><div class="pagination-next"><a href="/page/3/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link is-current" href="/page/2/">2</a></li><li><a class="pagination-link" href="/page/3/">3</a></li><li><a class="pagination-link" href="/page/4/">4</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatarMyself.jpg" alt="NilEra"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">NilEra</p><p class="is-size-6 is-block">C/C++ Developer!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Jinan Shandong</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">39</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">33</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">38</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/NilEra-K" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/NilEra-K"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://github.com/NilEra-K" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">GitHub</span></span><span class="level-right"><span class="level-item tag">github.com</span></span></a></li><li><a class="level is-mobile" href="https://nano.chemtian.top/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Thymol Blue</span></span><span class="level-right"><span class="level-item tag">nano.chemtian.top</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/CppDev/"><span class="level-start"><span class="level-item">CppDev</span></span><span class="level-end"><span class="level-item tag">7</span></span></a><ul><li><a class="level is-mobile" href="/categories/CppDev/Gaming/"><span class="level-start"><span class="level-item">Gaming</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/QT6/"><span class="level-start"><span class="level-item">QT6</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/"><span class="level-start"><span class="level-item">多线程编程</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"><span class="level-start"><span class="level-item">网络编程</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/"><span class="level-start"><span class="level-item">语法点</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/bind/"><span class="level-start"><span class="level-item">bind</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/enum-class/"><span class="level-start"><span class="level-item">enum class</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/%E8%99%9A%E5%87%BD%E6%95%B0/"><span class="level-start"><span class="level-item">虚函数</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/Linux/"><span class="level-start"><span class="level-item">Linux</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/Linux/%E8%BD%AF%E4%BB%B6%E6%BA%90/"><span class="level-start"><span class="level-item">软件源</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">大数据技术</span></span><span class="level-end"><span class="level-item tag">8</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/ECharts/"><span class="level-start"><span class="level-item">ECharts</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/HBase/"><span class="level-start"><span class="level-item">HBase</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/Scala/"><span class="level-start"><span class="level-item">Scala</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/Spark/"><span class="level-start"><span class="level-item">Spark</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"><span class="level-start"><span class="level-item">数据可视化</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/%E9%A1%B9%E7%9B%AE/"><span class="level-start"><span class="level-item">项目</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">开发工具</span></span><span class="level-end"><span class="level-item tag">4</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Axure-RP-9/"><span class="level-start"><span class="level-item">Axure RP 9</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Docker/"><span class="level-start"><span class="level-item">Docker</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/"><span class="level-start"><span class="level-item">Git</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/VSCode/"><span class="level-start"><span class="level-item">VSCode</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/"><span class="level-start"><span class="level-item">数据结构/算法</span></span><span class="level-end"><span class="level-item tag">4</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E5%93%88%E5%B8%8C-Hash/"><span class="level-start"><span class="level-item">哈希(Hash)</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E6%A0%88-Stack/"><span class="level-start"><span class="level-item">栈(Stack)</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E6%A0%91-Tree/"><span class="level-start"><span class="level-item">树(Tree)</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"><span class="level-start"><span class="level-item">深度学习</span></span><span class="level-end"><span class="level-item tag">7</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Kaggle/"><span class="level-start"><span class="level-item">Kaggle</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LLMs/"><span class="level-start"><span class="level-item">LLMs</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/PyTorch/"><span class="level-start"><span class="level-item">PyTorch</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E9%97%B2%E8%81%8A/"><span class="level-start"><span class="level-item">闲聊</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E9%97%B2%E8%81%8A/%E8%AE%A1%E5%88%92/"><span class="level-start"><span class="level-item">计划</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-18T02:35:39.000Z">2024-08-18</time></p><p class="title"><a href="/2024/08/18/Create-AN-Environment-of-Kaggle/">Create_AN_Environment_of_Kaggle</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-17T01:24:42.000Z">2024-08-17</time></p><p class="title"><a href="/2024/08/17/RSNA-2024/">RSNA-2024</a></p><p class="categories"><a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a> / <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Kaggle/">Kaggle</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-15T09:21:54.000Z">2024-08-15</time></p><p class="title"><a href="/2024/08/15/Virtual-Destructor-IN-Cpp/">Virtual_Destructor_IN_Cpp</a></p><p class="categories"><a href="/categories/CppDev/">CppDev</a> / <a href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/">语法点</a> / <a href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/%E8%99%9A%E5%87%BD%E6%95%B0/">虚函数</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-13T12:19:01.000Z">2024-08-13</time></p><p class="title"><a href="/2024/08/13/Deploy-LLMs-ON-Linux/">Deploy_LLMs_ON_Linux</a></p><p class="categories"><a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a> / <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LLMs/">LLMs</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-12T15:10:23.000Z">2024-08-12</time></p><p class="title"><a href="/2024/08/12/Windows-Build-llama-cpp/">Windows Build llama.cpp</a></p><p class="categories"><a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a> / <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LLMs/">LLMs</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/08/"><span class="level-start"><span class="level-item">八月 2024</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/07/"><span class="level-start"><span class="level-item">七月 2024</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/06/"><span class="level-start"><span class="level-item">六月 2024</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/05/"><span class="level-start"><span class="level-item">五月 2024</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/04/"><span class="level-start"><span class="level-item">四月 2024</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/03/"><span class="level-start"><span class="level-item">三月 2024</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Axure-RP-9/"><span class="tag">Axure RP 9</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/C-11-%E6%96%B0%E6%A0%87%E5%87%86/"><span class="tag">C++ 11 新标准</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/CppDev/"><span class="tag">CppDev</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Docker/"><span class="tag">Docker</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ECharts/"><span class="tag">ECharts</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/EasyX/"><span class="tag">EasyX</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GameDev/"><span class="tag">GameDev</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Git/"><span class="tag">Git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HBase/"><span class="tag">HBase</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Hadoop/"><span class="tag">Hadoop</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/JavaDev/"><span class="tag">JavaDev</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Kaggle/"><span class="tag">Kaggle</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/LLMs/"><span class="tag">LLMs</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/LM-Studio/"><span class="tag">LM-Studio</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Linux/"><span class="tag">Linux</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MyBatis-Plus/"><span class="tag">MyBatis-Plus</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/PowerInfer/"><span class="tag">PowerInfer</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/PyTorch/"><span class="tag">PyTorch</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/QT6/"><span class="tag">QT6</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/R/"><span class="tag">R</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Scala/"><span class="tag">Scala</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Spark/"><span class="tag">Spark</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Tomcat/"><span class="tag">Tomcat</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/VSCode/"><span class="tag">VSCode</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ZooKeeper/"><span class="tag">ZooKeeper</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/"><span class="tag">多线程编程</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/"><span class="tag">大数据技术</span><span class="tag">8</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"><span class="tag">开发工具</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="tag">数据结构</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"><span class="tag">机器学习</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"><span class="tag">深度学习</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%AE%97%E6%B3%95/"><span class="tag">算法</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"><span class="tag">网络编程</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%AE%A1%E5%88%92/"><span class="tag">计划</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%AF%AD%E6%B3%95%E7%82%B9/"><span class="tag">语法点</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%BD%AF%E4%BB%B6%E6%BA%90/"><span class="tag">软件源</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%97%B2%E8%81%8A/"><span class="tag">闲聊</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%A1%B9%E7%9B%AE/"><span class="tag">项目</span><span class="tag">1</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/StarLogo.svg" alt="Hello, NilEra :-)" height="28"></a><p class="is-size-7"><span>&copy; 2024 NilEra</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2024 前方⚡高能</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/NilEra-K"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/">上一页</a></div><div class="pagination-next"><a href="/page/3/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link is-current" href="/page/2/">2</a></li><li><a class="pagination-link" href="/page/3/">3</a></li><li><a class="pagination-link" href="/page/4/">4</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatarMyself.jpg" alt="NilEra"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">NilEra</p><p class="is-size-6 is-block">C/C++ Developer!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Jinan Shandong</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">40</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">35</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">39</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/NilEra-K" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/NilEra-K"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://github.com/NilEra-K" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">GitHub</span></span><span class="level-right"><span class="level-item tag">github.com</span></span></a></li><li><a class="level is-mobile" href="https://nano.chemtian.top/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Thymol Blue</span></span><span class="level-right"><span class="level-item tag">nano.chemtian.top</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/CppDev/"><span class="level-start"><span class="level-item">CppDev</span></span><span class="level-end"><span class="level-item tag">7</span></span></a><ul><li><a class="level is-mobile" href="/categories/CppDev/Gaming/"><span class="level-start"><span class="level-item">Gaming</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/QT6/"><span class="level-start"><span class="level-item">QT6</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/"><span class="level-start"><span class="level-item">多线程编程</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"><span class="level-start"><span class="level-item">网络编程</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/"><span class="level-start"><span class="level-item">语法点</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/bind/"><span class="level-start"><span class="level-item">bind</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/enum-class/"><span class="level-start"><span class="level-item">enum class</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/%E8%99%9A%E5%87%BD%E6%95%B0/"><span class="level-start"><span class="level-item">虚函数</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/Linux/"><span class="level-start"><span class="level-item">Linux</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/Linux/%E8%BD%AF%E4%BB%B6%E6%BA%90/"><span class="level-start"><span class="level-item">软件源</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">大数据技术</span></span><span class="level-end"><span class="level-item tag">8</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/ECharts/"><span class="level-start"><span class="level-item">ECharts</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/HBase/"><span class="level-start"><span class="level-item">HBase</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/Scala/"><span class="level-start"><span class="level-item">Scala</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/Spark/"><span class="level-start"><span class="level-item">Spark</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"><span class="level-start"><span class="level-item">数据可视化</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/%E9%A1%B9%E7%9B%AE/"><span class="level-start"><span class="level-item">项目</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">开发工具</span></span><span class="level-end"><span class="level-item tag">4</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Axure-RP-9/"><span class="level-start"><span class="level-item">Axure RP 9</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Docker/"><span class="level-start"><span class="level-item">Docker</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/"><span class="level-start"><span class="level-item">Git</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/VSCode/"><span class="level-start"><span class="level-item">VSCode</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/"><span class="level-start"><span class="level-item">数据结构/算法</span></span><span class="level-end"><span class="level-item tag">4</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E5%93%88%E5%B8%8C-Hash/"><span class="level-start"><span class="level-item">哈希(Hash)</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E6%A0%88-Stack/"><span class="level-start"><span class="level-item">栈(Stack)</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AE%97%E6%B3%95/%E6%A0%91-Tree/"><span class="level-start"><span class="level-item">树(Tree)</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"><span class="level-start"><span class="level-item">深度学习</span></span><span class="level-end"><span class="level-item tag">8</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Kaggle/"><span class="level-start"><span class="level-item">Kaggle</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LLMs/"><span class="level-start"><span class="level-item">LLMs</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/PyTorch/"><span class="level-start"><span class="level-item">PyTorch</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84/"><span class="level-start"><span class="level-item">网络架构</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84/Kolmogorov-Arnold-Networks/"><span class="level-start"><span class="level-item">Kolmogorov-Arnold Networks</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/%E9%97%B2%E8%81%8A/"><span class="level-start"><span class="level-item">闲聊</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E9%97%B2%E8%81%8A/%E8%AE%A1%E5%88%92/"><span class="level-start"><span class="level-item">计划</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-22T09:58:38.000Z">2024-08-22</time></p><p class="title"><a href="/2024/08/22/Kolmogorov-Arnold-Networks/">Kolmogorov-Arnold Networks</a></p><p class="categories"><a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a> / <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84/">网络架构</a> / <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84/Kolmogorov-Arnold-Networks/">Kolmogorov-Arnold Networks</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-18T02:35:39.000Z">2024-08-18</time></p><p class="title"><a href="/2024/08/18/Create-AN-Environment-of-Kaggle/">Create_AN_Environment_of_Kaggle</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-17T01:24:42.000Z">2024-08-17</time></p><p class="title"><a href="/2024/08/17/RSNA-2024/">RSNA-2024</a></p><p class="categories"><a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a> / <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Kaggle/">Kaggle</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-15T09:21:54.000Z">2024-08-15</time></p><p class="title"><a href="/2024/08/15/Virtual-Destructor-IN-Cpp/">Virtual_Destructor_IN_Cpp</a></p><p class="categories"><a href="/categories/CppDev/">CppDev</a> / <a href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/">语法点</a> / <a href="/categories/CppDev/%E8%AF%AD%E6%B3%95%E7%82%B9/%E8%99%9A%E5%87%BD%E6%95%B0/">虚函数</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-13T12:19:01.000Z">2024-08-13</time></p><p class="title"><a href="/2024/08/13/Deploy-LLMs-ON-Linux/">Deploy_LLMs_ON_Linux</a></p><p class="categories"><a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a> / <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LLMs/">LLMs</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/08/"><span class="level-start"><span class="level-item">八月 2024</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/07/"><span class="level-start"><span class="level-item">七月 2024</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/06/"><span class="level-start"><span class="level-item">六月 2024</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/05/"><span class="level-start"><span class="level-item">五月 2024</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/04/"><span class="level-start"><span class="level-item">四月 2024</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/03/"><span class="level-start"><span class="level-item">三月 2024</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Axure-RP-9/"><span class="tag">Axure RP 9</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/C-11-%E6%96%B0%E6%A0%87%E5%87%86/"><span class="tag">C++ 11 新标准</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/CppDev/"><span class="tag">CppDev</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Docker/"><span class="tag">Docker</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ECharts/"><span class="tag">ECharts</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/EasyX/"><span class="tag">EasyX</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GameDev/"><span class="tag">GameDev</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Git/"><span class="tag">Git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HBase/"><span class="tag">HBase</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Hadoop/"><span class="tag">Hadoop</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/JavaDev/"><span class="tag">JavaDev</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/KAN/"><span class="tag">KAN</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Kaggle/"><span class="tag">Kaggle</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/LLMs/"><span class="tag">LLMs</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/LM-Studio/"><span class="tag">LM-Studio</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Linux/"><span class="tag">Linux</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MyBatis-Plus/"><span class="tag">MyBatis-Plus</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/PowerInfer/"><span class="tag">PowerInfer</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/PyTorch/"><span class="tag">PyTorch</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/QT6/"><span class="tag">QT6</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/R/"><span class="tag">R</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Scala/"><span class="tag">Scala</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Spark/"><span class="tag">Spark</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Tomcat/"><span class="tag">Tomcat</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/VSCode/"><span class="tag">VSCode</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ZooKeeper/"><span class="tag">ZooKeeper</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/"><span class="tag">多线程编程</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%8A%80%E6%9C%AF/"><span class="tag">大数据技术</span><span class="tag">8</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"><span class="tag">开发工具</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><span class="tag">数据结构</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"><span class="tag">机器学习</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"><span class="tag">深度学习</span><span class="tag">8</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%AE%97%E6%B3%95/"><span class="tag">算法</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"><span class="tag">网络编程</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%AE%A1%E5%88%92/"><span class="tag">计划</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%AF%AD%E6%B3%95%E7%82%B9/"><span class="tag">语法点</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%BD%AF%E4%BB%B6%E6%BA%90/"><span class="tag">软件源</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%97%B2%E8%81%8A/"><span class="tag">闲聊</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%A1%B9%E7%9B%AE/"><span class="tag">项目</span><span class="tag">1</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/StarLogo.svg" alt="Hello, NilEra :-)" height="28"></a><p class="is-size-7"><span>&copy; 2024 NilEra</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2024 前方⚡高能</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/NilEra-K"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
             article: {
                 highlight: {
                     clipboard: true,

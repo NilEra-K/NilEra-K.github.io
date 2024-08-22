@@ -1,5 +1,5 @@
+https://hello-nilera.com/2024/08/22/Kolmogorov-Arnold-Networks/
 https://hello-nilera.com/2024/08/18/Create-AN-Environment-of-Kaggle/
 https://hello-nilera.com/2024/08/17/RSNA-2024/
 https://hello-nilera.com/2024/08/15/Virtual-Destructor-IN-Cpp/
 https://hello-nilera.com/2024/08/13/Deploy-LLMs-ON-Linux/
-https://hello-nilera.com/2024/08/12/Windows-Build-llama-cpp/
