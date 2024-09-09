@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hello-nilera.com/2024/07/22/DockerQuickIN/</loc>
+    <lastmod>2024-09-09</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/09/05/How2Use-Stable-Diffusion/</loc>
+    <lastmod>2024-09-05</lastmod>
+  </url>
+  <url>
     <loc>https://hello-nilera.com/2024/08/17/RSNA-2024/</loc>
     <lastmod>2024-09-03</lastmod>
   </url>
@@ -79,10 +87,6 @@
   <url>
     <loc>https://hello-nilera.com/2024/07/24/NginxQuickIN/</loc>
     <lastmod>2024-07-29</lastmod>
-  </url>
-  <url>
-    <loc>https://hello-nilera.com/2024/07/22/DockerQuickIN/</loc>
-    <lastmod>2024-07-24</lastmod>
   </url>
   <url>
     <loc>https://hello-nilera.com/2024/06/22/HBaseExamReview/</loc>
