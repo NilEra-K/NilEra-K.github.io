@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hello-nilera.com/2024/10/24/LLM-FINETUNE/</loc>
+    <lastmod>2024-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/08/01/LLM-Knowledge-Base/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/08/05/Deploy-LLMs-ON-PC/</loc>
+    <lastmod>2024-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/06/12/SpringBoot-Annotation/</loc>
+    <lastmod>2024-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/10/17/Run-Others-Java-Projects/</loc>
+    <lastmod>2024-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/08/13/Deploy-LLMs-ON-Linux/</loc>
+    <lastmod>2024-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://hello-nilera.com/2024/09/20/List/</loc>
+    <lastmod>2024-09-20</lastmod>
+  </url>
+  <url>
     <loc>https://hello-nilera.com/2024/09/12/RedHat-Build-LLM/</loc>
     <lastmod>2024-09-12</lastmod>
   </url>
@@ -21,10 +49,6 @@
     <lastmod>2024-09-03</lastmod>
   </url>
   <url>
-    <loc>https://hello-nilera.com/2024/08/13/Deploy-LLMs-ON-Linux/</loc>
-    <lastmod>2024-09-03</lastmod>
-  </url>
-  <url>
     <loc>https://hello-nilera.com/2024/08/22/Kolmogorov-Arnold-Networks/</loc>
     <lastmod>2024-08-22</lastmod>
   </url>
@@ -35,10 +59,6 @@
   <url>
     <loc>https://hello-nilera.com/2024/08/15/Virtual-Destructor-IN-Cpp/</loc>
     <lastmod>2024-08-17</lastmod>
-  </url>
-  <url>
-    <loc>https://hello-nilera.com/2024/08/05/Deploy-LLMs-ON-PC/</loc>
-    <lastmod>2024-08-14</lastmod>
   </url>
   <url>
     <loc>https://hello-nilera.com/2024/08/01/LLM-General-Education/</loc>
